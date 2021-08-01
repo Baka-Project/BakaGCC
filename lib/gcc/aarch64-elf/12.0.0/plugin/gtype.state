@@ -35412,11 +35412,11 @@
   nil )
  (!pair  "start_cleanup_cnt"
   (!type already_seen 2)
-  (!srcfileloc  "cp/decl.c" 9056)
+  (!srcfileloc  "cp/decl.c" 9060)
   nil )
  (!pair  "decomp_type_table"
   (!type already_seen 923)
-  (!srcfileloc  "cp/decl.c" 8509)
+  (!srcfileloc  "cp/decl.c" 8513)
   (!options 
    (!option cache string  "")
   )
