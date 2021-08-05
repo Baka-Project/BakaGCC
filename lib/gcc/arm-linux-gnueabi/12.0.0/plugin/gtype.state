@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210804 (experimental)")
+(!version  "12.0.0 20210805 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 231 0
@@ -22461,16 +22461,16 @@
   nil 0 nil nil )
  
  (!type struct 1349 nil  gc_unused "loc_list_hasher"
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   (!fields 0 )
   nil 1023 nil nil )
  
  (!type user_struct 1350 nil  gc_unused "hash_table<loc_list_hasher>"
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   (!fields 1 
    (!pair  "loc_list_hasher"
     (!type already_seen 1349)
-    (!srcfileloc  "dwarf2out.c" 31670)
+    (!srcfileloc  "dwarf2out.c" 31681)
     nil )
   )
  )
@@ -27979,7 +27979,7 @@
    (!type already_seen 2002)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.c" 45698)
+  (!srcfileloc  "cp/parser.c" 45700)
   (!fields 39 
    (!pair  "lexer"
     (!type already_seen 1988)
@@ -29283,7 +29283,7 @@
   nil 0 nil nil )
  
  (!type undefined 2163 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.c" 33129)
+  (!srcfileloc  "cp/parser.c" 33131)
  )
  
  (!type struct 2164 
@@ -30524,15 +30524,15 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 2002)
-  (!srcfileloc  "cp/parser.c" 45698)
+  (!srcfileloc  "cp/parser.c" 45700)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2163)
-  (!srcfileloc  "cp/parser.c" 33129)
+  (!srcfileloc  "cp/parser.c" 33131)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2163)
-  (!srcfileloc  "cp/parser.c" 33129)
+  (!srcfileloc  "cp/parser.c" 33131)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2285 nil  gc_unused "NUM_PREC_VALUES" 
@@ -32176,15 +32176,15 @@
   nil )
  (!pair  "loc_list_hash_type"
   (!type already_seen 1350)
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   nil )
  (!pair  "loc_list_hasher"
   (!type already_seen 1349)
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   nil )
  (!pair  "hash_table<loc_list_hasher>"
   (!type already_seen 1350)
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   nil )
  (!pair  "macinfo_hash_type"
   (!type already_seen 1347)
@@ -35096,11 +35096,11 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 46190)
+  (!srcfileloc  "cp/parser.c" 46192)
   nil )
  (!pair  "the_parser"
   (!type already_seen 2003)
-  (!srcfileloc  "cp/parser.c" 45698)
+  (!srcfileloc  "cp/parser.c" 45700)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
