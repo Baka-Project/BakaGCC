@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210804 (experimental)")
+(!version  "12.0.0 20210805 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 229 0
@@ -22495,16 +22495,16 @@
   nil 0 nil nil )
  
  (!type struct 1351 nil  gc_unused "loc_list_hasher"
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   (!fields 0 )
   nil 1023 nil nil )
  
  (!type user_struct 1352 nil  gc_unused "hash_table<loc_list_hasher>"
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   (!fields 1 
    (!pair  "loc_list_hasher"
     (!type already_seen 1351)
-    (!srcfileloc  "dwarf2out.c" 31670)
+    (!srcfileloc  "dwarf2out.c" 31681)
     nil )
   )
  )
@@ -28123,7 +28123,7 @@
    (!type already_seen 2026)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.c" 45698)
+  (!srcfileloc  "cp/parser.c" 45700)
   (!fields 39 
    (!pair  "lexer"
     (!type already_seen 2012)
@@ -29427,7 +29427,7 @@
   nil 0 nil nil )
  
  (!type undefined 2187 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.c" 33129)
+  (!srcfileloc  "cp/parser.c" 33131)
  )
  
  (!type struct 2188 
@@ -30668,15 +30668,15 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 2026)
-  (!srcfileloc  "cp/parser.c" 45698)
+  (!srcfileloc  "cp/parser.c" 45700)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2187)
-  (!srcfileloc  "cp/parser.c" 33129)
+  (!srcfileloc  "cp/parser.c" 33131)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2187)
-  (!srcfileloc  "cp/parser.c" 33129)
+  (!srcfileloc  "cp/parser.c" 33131)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2309 nil  gc_unused "NUM_PREC_VALUES" 
@@ -31758,7 +31758,7 @@
   nil )
  (!pair  "aarch64_cc"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.c" 2153)
+  (!srcfileloc  "config/aarch64/aarch64.c" 2154)
   nil )
  (!pair  "omp_declare_variant_alt_hasher"
   (!type already_seen 1637)
@@ -32310,15 +32310,15 @@
   nil )
  (!pair  "loc_list_hash_type"
   (!type already_seen 1352)
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   nil )
  (!pair  "loc_list_hasher"
   (!type already_seen 1351)
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   nil )
  (!pair  "hash_table<loc_list_hasher>"
   (!type already_seen 1352)
-  (!srcfileloc  "dwarf2out.c" 31670)
+  (!srcfileloc  "dwarf2out.c" 31681)
   nil )
  (!pair  "macinfo_hash_type"
   (!type already_seen 1349)
@@ -35222,11 +35222,11 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 46190)
+  (!srcfileloc  "cp/parser.c" 46192)
   nil )
  (!pair  "the_parser"
   (!type already_seen 2027)
-  (!srcfileloc  "cp/parser.c" 45698)
+  (!srcfileloc  "cp/parser.c" 45700)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
@@ -36160,25 +36160,25 @@
   nil )
  (!pair  "aarch64_sls_shared_thunks_needed"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.c" 25621)
+  (!srcfileloc  "config/aarch64/aarch64.c" 25659)
   nil )
  (!pair  "aarch64_sls_shared_thunks"
   (!type array 2365 nil  gc_used "30" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64.c" 25620)
+  (!srcfileloc  "config/aarch64/aarch64.c" 25658)
   nil )
  (!pair  "va_list_type"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.c" 18329)
+  (!srcfileloc  "config/aarch64/aarch64.c" 18367)
   nil )
  (!pair  "aarch64_previous_fndecl"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.c" 17316)
+  (!srcfileloc  "config/aarch64/aarch64.c" 17354)
   nil )
  (!pair  "tls_get_addr_libfunc"
   (!type already_seen 99)
-  (!srcfileloc  "config/aarch64/aarch64.c" 3588)
+  (!srcfileloc  "config/aarch64/aarch64.c" 3589)
   nil )
  (!pair  "stack_chk_fail_decl"
   (!type already_seen 23)
