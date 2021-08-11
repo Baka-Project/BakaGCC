@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210810 (experimental)")
+(!version  "12.0.0 20210811 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 228 0
@@ -27919,7 +27919,7 @@
    (!type already_seen 2005)
   )
   gc_pointed_to "cp_lexer"
-  (!srcfileloc  "cp/parser.h" 234)
+  (!srcfileloc  "cp/parser.h" 233)
   (!fields 11 
    (!pair  "buffer"
     (!type already_seen 2003)
@@ -28014,7 +28014,7 @@
  )
  
  (!type struct 2011 nil  gc_used "cp_unparsed_functions_entry"
-  (!srcfileloc  "cp/parser.h" 378)
+  (!srcfileloc  "cp/parser.h" 377)
   (!fields 4 
    (!pair  "funs_with_default_args"
     (!type already_seen 2010)
@@ -28040,7 +28040,7 @@
    (!type already_seen 2012)
   )
   gc_pointed_to "cp_parser_context"
-  (!srcfileloc  "cp/parser.h" 268)
+  (!srcfileloc  "cp/parser.h" 267)
   (!fields 3 
    (!pair  "status"
     (!type already_seen 2)
@@ -28062,7 +28062,7 @@
    (!type already_seen 2014)
   )
   gc_unused "cp_omp_declare_simd_data"
-  (!srcfileloc  "cp/parser.h" 390)
+  (!srcfileloc  "cp/parser.h" 389)
   (!fields 0 )
   nil 516 nil nil )
  
@@ -28071,7 +28071,7 @@
    (!type already_seen 2016)
   )
   gc_unused "cp_oacc_routine_data"
-  (!srcfileloc  "cp/parser.h" 394)
+  (!srcfileloc  "cp/parser.h" 393)
   (!fields 0 )
   nil 516 nil nil )
  
@@ -28080,15 +28080,15 @@
    (!type already_seen 2018)
   )
   gc_pointed_to "vec<cp_unparsed_functions_entry,va_gc>"
-  (!srcfileloc  "cp/parser.h" 378)
+  (!srcfileloc  "cp/parser.h" 377)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "cp/parser.h" 378)
+    (!srcfileloc  "cp/parser.h" 377)
     nil )
    (!pair  "cp_unparsed_functions_entry"
     (!type already_seen 2011)
-    (!srcfileloc  "cp/parser.h" 378)
+    (!srcfileloc  "cp/parser.h" 377)
     nil )
   )
  )
@@ -28098,169 +28098,169 @@
    (!type already_seen 2020)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.c" 45700)
+  (!srcfileloc  "cp/parser.c" 46077)
   (!fields 39 
    (!pair  "lexer"
     (!type already_seen 2006)
-    (!srcfileloc  "cp/parser.h" 234)
+    (!srcfileloc  "cp/parser.h" 233)
     nil )
    (!pair  "scope"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 249)
+    (!srcfileloc  "cp/parser.h" 248)
     nil )
    (!pair  "object_scope"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 256)
+    (!srcfileloc  "cp/parser.h" 255)
     nil )
    (!pair  "qualifying_scope"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 257)
+    (!srcfileloc  "cp/parser.h" 256)
     nil )
    (!pair  "context"
     (!type already_seen 2013)
-    (!srcfileloc  "cp/parser.h" 268)
+    (!srcfileloc  "cp/parser.h" 267)
     nil )
    (!pair  "allow_gnu_extensions_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 272)
+    (!srcfileloc  "cp/parser.h" 271)
     nil )
    (!pair  "greater_than_is_operator_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 279)
+    (!srcfileloc  "cp/parser.h" 278)
     nil )
    (!pair  "default_arg_ok_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 284)
+    (!srcfileloc  "cp/parser.h" 283)
     nil )
    (!pair  "integral_constant_expression_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 288)
+    (!srcfileloc  "cp/parser.h" 287)
     nil )
    (!pair  "allow_non_integral_constant_expression_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 294)
+    (!srcfileloc  "cp/parser.h" 293)
     nil )
    (!pair  "non_integral_constant_expression_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 298)
+    (!srcfileloc  "cp/parser.h" 297)
     nil )
    (!pair  "local_variables_forbidden_p"
     (!type already_seen 8)
-    (!srcfileloc  "cp/parser.h" 305)
+    (!srcfileloc  "cp/parser.h" 304)
     nil )
    (!pair  "in_unbraced_linkage_specification_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 310)
+    (!srcfileloc  "cp/parser.h" 309)
     nil )
    (!pair  "in_declarator_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 314)
+    (!srcfileloc  "cp/parser.h" 313)
     nil )
    (!pair  "in_template_argument_list_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 317)
+    (!srcfileloc  "cp/parser.h" 316)
     nil )
    (!pair  "in_statement"
     (!type already_seen 8)
-    (!srcfileloc  "cp/parser.h" 329)
+    (!srcfileloc  "cp/parser.h" 328)
     nil )
    (!pair  "in_switch_statement_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 335)
+    (!srcfileloc  "cp/parser.h" 334)
     nil )
    (!pair  "in_type_id_in_expr_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 340)
+    (!srcfileloc  "cp/parser.h" 339)
     nil )
    (!pair  "translate_strings_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 344)
+    (!srcfileloc  "cp/parser.h" 343)
     nil )
    (!pair  "in_function_body"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 348)
+    (!srcfileloc  "cp/parser.h" 347)
     nil )
    (!pair  "in_transaction"
     (!type already_seen 8)
-    (!srcfileloc  "cp/parser.h" 352)
+    (!srcfileloc  "cp/parser.h" 351)
     nil )
    (!pair  "colon_corrects_to_scope_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 355)
+    (!srcfileloc  "cp/parser.h" 354)
     nil )
    (!pair  "colon_doesnt_start_class_def_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 361)
+    (!srcfileloc  "cp/parser.h" 360)
     nil )
    (!pair  "objective_c_message_context_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 365)
+    (!srcfileloc  "cp/parser.h" 364)
     nil )
    (!pair  "type_definition_forbidden_message"
     (!type already_seen 11)
-    (!srcfileloc  "cp/parser.h" 370)
+    (!srcfileloc  "cp/parser.h" 369)
     nil )
    (!pair  "type_definition_forbidden_message_arg"
     (!type already_seen 11)
-    (!srcfileloc  "cp/parser.h" 373)
+    (!srcfileloc  "cp/parser.h" 372)
     nil )
    (!pair  "unparsed_queues"
     (!type already_seen 2019)
-    (!srcfileloc  "cp/parser.h" 378)
+    (!srcfileloc  "cp/parser.h" 377)
     nil )
    (!pair  "num_classes_being_defined"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 382)
+    (!srcfileloc  "cp/parser.h" 381)
     nil )
    (!pair  "num_template_parameter_lists"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 386)
+    (!srcfileloc  "cp/parser.h" 385)
     nil )
    (!pair  "omp_declare_simd"
     (!type already_seen 2015)
-    (!srcfileloc  "cp/parser.h" 390)
+    (!srcfileloc  "cp/parser.h" 389)
     (!options 
      (!option skip string  "")
     )
    )
    (!pair  "oacc_routine"
     (!type already_seen 2017)
-    (!srcfileloc  "cp/parser.h" 394)
+    (!srcfileloc  "cp/parser.h" 393)
     (!options 
      (!option skip string  "")
     )
    )
    (!pair  "auto_is_implicit_function_template_parm_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 398)
+    (!srcfileloc  "cp/parser.h" 397)
     nil )
    (!pair  "fully_implicit_function_template_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 403)
+    (!srcfileloc  "cp/parser.h" 402)
     nil )
    (!pair  "omp_attrs_forbidden_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 406)
+    (!srcfileloc  "cp/parser.h" 405)
     nil )
    (!pair  "implicit_template_parms"
     (!type already_seen 23)
-    (!srcfileloc  "cp/parser.h" 414)
+    (!srcfileloc  "cp/parser.h" 413)
     nil )
    (!pair  "implicit_template_scope"
     (!type already_seen 82)
-    (!srcfileloc  "cp/parser.h" 421)
+    (!srcfileloc  "cp/parser.h" 420)
     nil )
    (!pair  "in_result_type_constraint_p"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 426)
+    (!srcfileloc  "cp/parser.h" 425)
     nil )
    (!pair  "prevent_constrained_type_specifiers"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 430)
+    (!srcfileloc  "cp/parser.h" 429)
     nil )
    (!pair  "innermost_linkage_specification_location"
     (!type already_seen 2)
-    (!srcfileloc  "cp/parser.h" 434)
+    (!srcfileloc  "cp/parser.h" 433)
     nil )
   )
   nil 516 nil nil )
@@ -29402,7 +29402,7 @@
   nil 0 nil nil )
  
  (!type undefined 2181 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.c" 33131)
+  (!srcfileloc  "cp/parser.c" 33378)
  )
  
  (!type struct 2182 
@@ -30643,25 +30643,25 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 2020)
-  (!srcfileloc  "cp/parser.c" 45700)
+  (!srcfileloc  "cp/parser.c" 46077)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2181)
-  (!srcfileloc  "cp/parser.c" 33131)
+  (!srcfileloc  "cp/parser.c" 33378)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2181)
-  (!srcfileloc  "cp/parser.c" 33131)
+  (!srcfileloc  "cp/parser.c" 33378)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2303 nil  gc_unused "NUM_PREC_VALUES" 
    (!type already_seen 2176)
   )
-  (!srcfileloc  "cp/parser.c" 1951)
+  (!srcfileloc  "cp/parser.c" 1969)
   nil )
  (!pair  "cp_parser_flags"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 1882)
+  (!srcfileloc  "cp/parser.c" 1900)
   nil )
  (!pair  "vec<macro_export,va_gc>"
   (!type already_seen 2162)
@@ -30971,27 +30971,27 @@
   nil )
  (!pair  "cp_oacc_routine_data"
   (!type already_seen 2016)
-  (!srcfileloc  "cp/parser.h" 394)
+  (!srcfileloc  "cp/parser.h" 393)
   nil )
  (!pair  "cp_omp_declare_simd_data"
   (!type already_seen 2014)
-  (!srcfileloc  "cp/parser.h" 390)
+  (!srcfileloc  "cp/parser.h" 389)
   nil )
  (!pair  "cp_unparsed_functions_entry"
   (!type already_seen 2011)
-  (!srcfileloc  "cp/parser.h" 378)
+  (!srcfileloc  "cp/parser.h" 377)
   nil )
  (!pair  "vec<cp_unparsed_functions_entry,va_gc>"
   (!type already_seen 2018)
-  (!srcfileloc  "cp/parser.h" 378)
+  (!srcfileloc  "cp/parser.h" 377)
   nil )
  (!pair  "cp_parser_context"
   (!type already_seen 2012)
-  (!srcfileloc  "cp/parser.h" 268)
+  (!srcfileloc  "cp/parser.h" 267)
   nil )
  (!pair  "cp_lexer"
   (!type already_seen 2005)
-  (!srcfileloc  "cp/parser.h" 234)
+  (!srcfileloc  "cp/parser.h" 233)
   nil )
  (!pair  "cp_default_arg_entry"
   (!type already_seen 2008)
@@ -31287,7 +31287,7 @@
   nil )
  (!pair  "atomic_acces_t"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/trans.c" 4150)
+  (!srcfileloc  "ada/gcc-interface/trans.c" 4152)
   nil )
  (!pair  "vec<loop_info,va_gc>"
   (!type already_seen 1858)
@@ -35197,19 +35197,19 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 46192)
+  (!srcfileloc  "cp/parser.c" 46569)
   nil )
  (!pair  "the_parser"
   (!type already_seen 2021)
-  (!srcfileloc  "cp/parser.c" 45700)
+  (!srcfileloc  "cp/parser.c" 46077)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
-  (!srcfileloc  "cp/parser.c" 18812)
+  (!srcfileloc  "cp/parser.c" 19024)
   nil )
  (!pair  "cp_parser_context_free_list"
   (!type already_seen 2013)
-  (!srcfileloc  "cp/parser.c" 1962)
+  (!srcfileloc  "cp/parser.c" 1980)
   (!options 
    (!option deletable string  "")
   )
@@ -35919,7 +35919,7 @@
  )
  (!pair  "thunk_labelno"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/trans.c" 10707)
+  (!srcfileloc  "ada/gcc-interface/trans.c" 10709)
   nil )
  (!pair  "gnu_loop_stack"
   (!type already_seen 1859)
