@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210811 (experimental)")
+(!version  "12.0.0 20210812 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 230 0
@@ -27954,7 +27954,7 @@
    (!type already_seen 1996)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.c" 46077)
+  (!srcfileloc  "cp/parser.c" 46114)
   (!fields 39 
    (!pair  "lexer"
     (!type already_seen 1982)
@@ -29258,7 +29258,7 @@
   nil 0 nil nil )
  
  (!type undefined 2157 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.c" 33378)
+  (!srcfileloc  "cp/parser.c" 33415)
  )
  
  (!type struct 2158 
@@ -30499,15 +30499,15 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 1996)
-  (!srcfileloc  "cp/parser.c" 46077)
+  (!srcfileloc  "cp/parser.c" 46114)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2157)
-  (!srcfileloc  "cp/parser.c" 33378)
+  (!srcfileloc  "cp/parser.c" 33415)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2157)
-  (!srcfileloc  "cp/parser.c" 33378)
+  (!srcfileloc  "cp/parser.c" 33415)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2279 nil  gc_unused "NUM_PREC_VALUES" 
@@ -31143,7 +31143,7 @@
   nil )
  (!pair  "atomic_acces_t"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/trans.c" 4150)
+  (!srcfileloc  "ada/gcc-interface/trans.c" 4152)
   nil )
  (!pair  "vec<loop_info,va_gc>"
   (!type already_seen 1834)
@@ -35075,15 +35075,15 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 46569)
+  (!srcfileloc  "cp/parser.c" 46606)
   nil )
  (!pair  "the_parser"
   (!type already_seen 1997)
-  (!srcfileloc  "cp/parser.c" 46077)
+  (!srcfileloc  "cp/parser.c" 46114)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
-  (!srcfileloc  "cp/parser.c" 19024)
+  (!srcfileloc  "cp/parser.c" 19027)
   nil )
  (!pair  "cp_parser_context_free_list"
   (!type already_seen 1989)
@@ -35227,19 +35227,19 @@
   nil )
  (!pair  "ssdf_decls"
   (!type already_seen 84)
-  (!srcfileloc  "cp/decl2.c" 3821)
+  (!srcfileloc  "cp/decl2.c" 3827)
   nil )
  (!pair  "ssdf_decl"
   (!type already_seen 23)
-  (!srcfileloc  "cp/decl2.c" 3817)
+  (!srcfileloc  "cp/decl2.c" 3823)
   nil )
  (!pair  "priority_decl"
   (!type already_seen 23)
-  (!srcfileloc  "cp/decl2.c" 3814)
+  (!srcfileloc  "cp/decl2.c" 3820)
   nil )
  (!pair  "initialize_p_decl"
   (!type already_seen 23)
-  (!srcfileloc  "cp/decl2.c" 3811)
+  (!srcfileloc  "cp/decl2.c" 3817)
   nil )
  (!pair  "mangled_decls"
   (!type already_seen 2073)
@@ -35797,7 +35797,7 @@
  )
  (!pair  "thunk_labelno"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/trans.c" 10707)
+  (!srcfileloc  "ada/gcc-interface/trans.c" 10709)
   nil )
  (!pair  "gnu_loop_stack"
   (!type already_seen 1835)
