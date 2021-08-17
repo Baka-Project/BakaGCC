@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210816 (experimental)")
+(!version  "12.0.0 20210817 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 228 0
@@ -22427,23 +22427,23 @@
   nil 0 nil nil )
  
  (!type struct 1344 nil  gc_pointed_to "inline_entry_data"
-  (!srcfileloc  "dwarf2out.c" 24099)
+  (!srcfileloc  "dwarf2out.c" 24098)
   (!fields 4 
    (!pair  "block"
     (!type already_seen 23)
-    (!srcfileloc  "dwarf2out.c" 24091)
+    (!srcfileloc  "dwarf2out.c" 24090)
     nil )
    (!pair  "label_pfx"
     (!type already_seen 11)
-    (!srcfileloc  "dwarf2out.c" 24094)
+    (!srcfileloc  "dwarf2out.c" 24093)
     nil )
    (!pair  "label_num"
     (!type already_seen 2)
-    (!srcfileloc  "dwarf2out.c" 24095)
+    (!srcfileloc  "dwarf2out.c" 24094)
     nil )
    (!pair  "view"
     (!type already_seen 2)
-    (!srcfileloc  "dwarf2out.c" 24098)
+    (!srcfileloc  "dwarf2out.c" 24097)
     nil )
   )
   (!options 
@@ -22452,7 +22452,7 @@
   1023 nil nil )
  
  (!type struct 1345 nil  gc_used "inline_entry_data_hasher"
-  (!srcfileloc  "dwarf2out.c" 24125)
+  (!srcfileloc  "dwarf2out.c" 24124)
   (!fields 0 )
   nil 1023 nil nil )
  
@@ -22461,26 +22461,26 @@
    (!type already_seen 1346)
   )
   gc_pointed_to "hash_table<inline_entry_data_hasher>"
-  (!srcfileloc  "dwarf2out.c" 24125)
+  (!srcfileloc  "dwarf2out.c" 24124)
   (!fields 1 
    (!pair  "inline_entry_data_hasher"
     (!type already_seen 1345)
-    (!srcfileloc  "dwarf2out.c" 24125)
+    (!srcfileloc  "dwarf2out.c" 24124)
     nil )
   )
  )
  
  (!type struct 1348 nil  gc_unused "macinfo_entry_hasher"
-  (!srcfileloc  "dwarf2out.c" 28660)
+  (!srcfileloc  "dwarf2out.c" 28659)
   (!fields 0 )
   nil 1023 nil nil )
  
  (!type user_struct 1349 nil  gc_unused "hash_table<macinfo_entry_hasher>"
-  (!srcfileloc  "dwarf2out.c" 28660)
+  (!srcfileloc  "dwarf2out.c" 28659)
   (!fields 1 
    (!pair  "macinfo_entry_hasher"
     (!type already_seen 1348)
-    (!srcfileloc  "dwarf2out.c" 28660)
+    (!srcfileloc  "dwarf2out.c" 28659)
     nil )
   )
  )
@@ -22490,16 +22490,16 @@
   nil 0 nil nil )
  
  (!type struct 1351 nil  gc_unused "loc_list_hasher"
-  (!srcfileloc  "dwarf2out.c" 31681)
+  (!srcfileloc  "dwarf2out.c" 31680)
   (!fields 0 )
   nil 1023 nil nil )
  
  (!type user_struct 1352 nil  gc_unused "hash_table<loc_list_hasher>"
-  (!srcfileloc  "dwarf2out.c" 31681)
+  (!srcfileloc  "dwarf2out.c" 31680)
   (!fields 1 
    (!pair  "loc_list_hasher"
     (!type already_seen 1351)
-    (!srcfileloc  "dwarf2out.c" 31681)
+    (!srcfileloc  "dwarf2out.c" 31680)
     nil )
   )
  )
@@ -26653,23 +26653,23 @@
   nil 0 nil nil )
  
  (!type struct 1906 nil  gc_used "lazy_hex_fp_value_struct"
-  (!srcfileloc  "c-family/c-cppbuiltin.c" 1691)
+  (!srcfileloc  "c-family/c-cppbuiltin.c" 1693)
   (!fields 4 
    (!pair  "hex_str"
     (!type already_seen 11)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1687)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1689)
     nil )
    (!pair  "mode"
     (!type already_seen 2)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1688)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1690)
     nil )
    (!pair  "digits"
     (!type already_seen 2)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1689)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1691)
     nil )
    (!pair  "fp_suffix"
     (!type already_seen 11)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1690)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1692)
     nil )
   )
   nil 774 nil nil )
@@ -32317,35 +32317,35 @@
   nil )
  (!pair  "loc_list_hash_type"
   (!type already_seen 1352)
-  (!srcfileloc  "dwarf2out.c" 31681)
+  (!srcfileloc  "dwarf2out.c" 31680)
   nil )
  (!pair  "loc_list_hasher"
   (!type already_seen 1351)
-  (!srcfileloc  "dwarf2out.c" 31681)
+  (!srcfileloc  "dwarf2out.c" 31680)
   nil )
  (!pair  "hash_table<loc_list_hasher>"
   (!type already_seen 1352)
-  (!srcfileloc  "dwarf2out.c" 31681)
+  (!srcfileloc  "dwarf2out.c" 31680)
   nil )
  (!pair  "macinfo_hash_type"
   (!type already_seen 1349)
-  (!srcfileloc  "dwarf2out.c" 28660)
+  (!srcfileloc  "dwarf2out.c" 28659)
   nil )
  (!pair  "macinfo_entry_hasher"
   (!type already_seen 1348)
-  (!srcfileloc  "dwarf2out.c" 28660)
+  (!srcfileloc  "dwarf2out.c" 28659)
   nil )
  (!pair  "hash_table<macinfo_entry_hasher>"
   (!type already_seen 1349)
-  (!srcfileloc  "dwarf2out.c" 28660)
+  (!srcfileloc  "dwarf2out.c" 28659)
   nil )
  (!pair  "inline_entry_data_hasher"
   (!type already_seen 1345)
-  (!srcfileloc  "dwarf2out.c" 24125)
+  (!srcfileloc  "dwarf2out.c" 24124)
   nil )
  (!pair  "hash_table<inline_entry_data_hasher>"
   (!type already_seen 1346)
-  (!srcfileloc  "dwarf2out.c" 24125)
+  (!srcfileloc  "dwarf2out.c" 24124)
   nil )
  (!pair  "external_ref_hash_type"
   (!type already_seen 1338)
@@ -35751,13 +35751,13 @@
   nil )
  (!pair  "lazy_hex_fp_value_count"
   (!type already_seen 2)
-  (!srcfileloc  "c-family/c-cppbuiltin.c" 1700)
+  (!srcfileloc  "c-family/c-cppbuiltin.c" 1702)
   nil )
  (!pair  "lazy_hex_fp_values"
   (!type array 2344 nil  gc_used "LAZY_HEX_FP_VALUES_CNT" 
    (!type already_seen 1906)
   )
-  (!srcfileloc  "c-family/c-cppbuiltin.c" 1699)
+  (!srcfileloc  "c-family/c-cppbuiltin.c" 1701)
   nil )
  (!pair  "g_string_concat_db"
   (!type already_seen 720)
@@ -36197,7 +36197,7 @@
   nil )
  (!pair  "critical_name_mutexes"
   (!type already_seen 390)
-  (!srcfileloc  "omp-low.c" 10054)
+  (!srcfileloc  "omp-low.c" 10064)
   nil )
  (!pair  "omp_declare_variant_alt"
   (!type already_seen 1633)
@@ -36707,7 +36707,7 @@
   nil )
  (!pair  "inline_entry_data_table"
   (!type already_seen 1347)
-  (!srcfileloc  "dwarf2out.c" 24125)
+  (!srcfileloc  "dwarf2out.c" 24124)
   nil )
  (!pair  "external_die_map"
   (!type already_seen 1332)
