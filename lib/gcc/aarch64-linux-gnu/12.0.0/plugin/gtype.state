@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210820 (experimental)")
+(!version  "12.0.0 20210821 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 228 0
@@ -27034,7 +27034,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1945 nil  gc_unused "anonymous:../../gcc/gcc/c/c-parser.c:7777"nil 
+ (!type struct 1945 nil  gc_unused "anonymous:../../gcc/gcc/c/c-parser.c:7778"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -28122,7 +28122,7 @@
    (!type already_seen 2023)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.c" 46359)
+  (!srcfileloc  "cp/parser.c" 46564)
   (!fields 39 
    (!pair  "lexer"
     (!type already_seen 2009)
@@ -29426,7 +29426,7 @@
   nil 0 nil nil )
  
  (!type undefined 2184 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.c" 33448)
+  (!srcfileloc  "cp/parser.c" 33468)
  )
  
  (!type struct 2185 
@@ -30667,15 +30667,15 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 2023)
-  (!srcfileloc  "cp/parser.c" 46359)
+  (!srcfileloc  "cp/parser.c" 46564)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2184)
-  (!srcfileloc  "cp/parser.c" 33448)
+  (!srcfileloc  "cp/parser.c" 33468)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2184)
-  (!srcfileloc  "cp/parser.c" 33448)
+  (!srcfileloc  "cp/parser.c" 33468)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2306 nil  gc_unused "NUM_PREC_VALUES" 
@@ -31223,11 +31223,11 @@
   nil )
  (!pair  "pragma_handler_2arg"
   (!type already_seen 2)
-  (!srcfileloc  "c-family/c-pragma.h" 210)
+  (!srcfileloc  "c-family/c-pragma.h" 211)
   nil )
  (!pair  "pragma_handler_1arg"
   (!type already_seen 2)
-  (!srcfileloc  "c-family/c-pragma.h" 207)
+  (!srcfileloc  "c-family/c-pragma.h" 208)
   nil )
  (!pair  "omp_clause_mask"
   (!type already_seen 1903)
@@ -35229,15 +35229,15 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 46868)
+  (!srcfileloc  "cp/parser.c" 47076)
   nil )
  (!pair  "the_parser"
   (!type already_seen 2024)
-  (!srcfileloc  "cp/parser.c" 46359)
+  (!srcfileloc  "cp/parser.c" 46564)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
-  (!srcfileloc  "cp/parser.c" 19050)
+  (!srcfileloc  "cp/parser.c" 19070)
   nil )
  (!pair  "cp_parser_context_free_list"
   (!type already_seen 2016)
@@ -35747,7 +35747,7 @@
   nil )
  (!pair  "pragma_extern_prefix"
   (!type already_seen 23)
-  (!srcfileloc  "c-family/c-pragma.h" 266)
+  (!srcfileloc  "c-family/c-pragma.h" 267)
   nil )
  (!pair  "lazy_hex_fp_value_count"
   (!type already_seen 2)
