@@ -133,7 +133,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2021-08-23" "gcc-12.0.0" "GNU"
+.TH GCC 1 "2021-08-24" "gcc-12.0.0" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -23543,11 +23543,6 @@ Select application model \fIapp-model\fR.  Valid models are
 .IP "\fBexecutable\fR" 4
 .IX Item "executable"
 normal executable (default), uses startup code \fIcrt0.o\fR.
-.IP "\fB\-mpic\-data\-is\-text\-relative\fR" 4
-.IX Item "-mpic-data-is-text-relative"
-Assume that the displacement between the text and data segments is fixed
-at static link time.  This allows data to be referenced by offset from start of
-text address instead of \s-1GOT\s0 since PC-relative addressing is not supported.
 .IP "\fBxmdstub\fR" 4
 .IX Item "xmdstub"
 for use with Xilinx Microprocessor Debugger (\s-1XMD\s0) based
@@ -23570,6 +23565,11 @@ within a monitoring application. This model uses \fIcrt3.o\fR as a startup file.
 Option \fB\-xl\-mode\-\fR\fIapp-model\fR is a deprecated alias for
 \&\fB\-mxl\-mode\-\fR\fIapp-model\fR.
 .RE
+.IP "\fB\-mpic\-data\-is\-text\-relative\fR" 4
+.IX Item "-mpic-data-is-text-relative"
+Assume that the displacement between the text and data segments is fixed
+at static link time.  This allows data to be referenced by offset from start of
+text address instead of \s-1GOT\s0 since PC-relative addressing is not supported.
 .PP
 \fI\s-1MIPS\s0 Options\fR
 .IX Subsection "MIPS Options"
