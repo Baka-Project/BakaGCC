@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210906 (experimental)")
+(!version  "12.0.0 20210907 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 228 0
@@ -22447,23 +22447,23 @@
   nil 0 nil nil )
  
  (!type struct 1345 nil  gc_pointed_to "inline_entry_data"
-  (!srcfileloc  "dwarf2out.c" 24098)
+  (!srcfileloc  "dwarf2out.c" 24104)
   (!fields 4 
    (!pair  "block"
     (!type already_seen 23)
-    (!srcfileloc  "dwarf2out.c" 24090)
+    (!srcfileloc  "dwarf2out.c" 24096)
     nil )
    (!pair  "label_pfx"
     (!type already_seen 11)
-    (!srcfileloc  "dwarf2out.c" 24093)
+    (!srcfileloc  "dwarf2out.c" 24099)
     nil )
    (!pair  "label_num"
     (!type already_seen 2)
-    (!srcfileloc  "dwarf2out.c" 24094)
+    (!srcfileloc  "dwarf2out.c" 24100)
     nil )
    (!pair  "view"
     (!type already_seen 2)
-    (!srcfileloc  "dwarf2out.c" 24097)
+    (!srcfileloc  "dwarf2out.c" 24103)
     nil )
   )
   (!options 
@@ -22472,7 +22472,7 @@
   1023 nil nil )
  
  (!type struct 1346 nil  gc_used "inline_entry_data_hasher"
-  (!srcfileloc  "dwarf2out.c" 24124)
+  (!srcfileloc  "dwarf2out.c" 24130)
   (!fields 0 )
   nil 1023 nil nil )
  
@@ -22481,26 +22481,26 @@
    (!type already_seen 1347)
   )
   gc_pointed_to "hash_table<inline_entry_data_hasher>"
-  (!srcfileloc  "dwarf2out.c" 24124)
+  (!srcfileloc  "dwarf2out.c" 24130)
   (!fields 1 
    (!pair  "inline_entry_data_hasher"
     (!type already_seen 1346)
-    (!srcfileloc  "dwarf2out.c" 24124)
+    (!srcfileloc  "dwarf2out.c" 24130)
     nil )
   )
  )
  
  (!type struct 1349 nil  gc_unused "macinfo_entry_hasher"
-  (!srcfileloc  "dwarf2out.c" 28678)
+  (!srcfileloc  "dwarf2out.c" 28684)
   (!fields 0 )
   nil 1023 nil nil )
  
  (!type user_struct 1350 nil  gc_unused "hash_table<macinfo_entry_hasher>"
-  (!srcfileloc  "dwarf2out.c" 28678)
+  (!srcfileloc  "dwarf2out.c" 28684)
   (!fields 1 
    (!pair  "macinfo_entry_hasher"
     (!type already_seen 1349)
-    (!srcfileloc  "dwarf2out.c" 28678)
+    (!srcfileloc  "dwarf2out.c" 28684)
     nil )
   )
  )
@@ -22510,16 +22510,16 @@
   nil 0 nil nil )
  
  (!type struct 1352 nil  gc_unused "loc_list_hasher"
-  (!srcfileloc  "dwarf2out.c" 31699)
+  (!srcfileloc  "dwarf2out.c" 31705)
   (!fields 0 )
   nil 1023 nil nil )
  
  (!type user_struct 1353 nil  gc_unused "hash_table<loc_list_hasher>"
-  (!srcfileloc  "dwarf2out.c" 31699)
+  (!srcfileloc  "dwarf2out.c" 31705)
   (!fields 1 
    (!pair  "loc_list_hasher"
     (!type already_seen 1352)
-    (!srcfileloc  "dwarf2out.c" 31699)
+    (!srcfileloc  "dwarf2out.c" 31705)
     nil )
   )
  )
@@ -32375,35 +32375,35 @@
   nil )
  (!pair  "loc_list_hash_type"
   (!type already_seen 1353)
-  (!srcfileloc  "dwarf2out.c" 31699)
+  (!srcfileloc  "dwarf2out.c" 31705)
   nil )
  (!pair  "loc_list_hasher"
   (!type already_seen 1352)
-  (!srcfileloc  "dwarf2out.c" 31699)
+  (!srcfileloc  "dwarf2out.c" 31705)
   nil )
  (!pair  "hash_table<loc_list_hasher>"
   (!type already_seen 1353)
-  (!srcfileloc  "dwarf2out.c" 31699)
+  (!srcfileloc  "dwarf2out.c" 31705)
   nil )
  (!pair  "macinfo_hash_type"
   (!type already_seen 1350)
-  (!srcfileloc  "dwarf2out.c" 28678)
+  (!srcfileloc  "dwarf2out.c" 28684)
   nil )
  (!pair  "macinfo_entry_hasher"
   (!type already_seen 1349)
-  (!srcfileloc  "dwarf2out.c" 28678)
+  (!srcfileloc  "dwarf2out.c" 28684)
   nil )
  (!pair  "hash_table<macinfo_entry_hasher>"
   (!type already_seen 1350)
-  (!srcfileloc  "dwarf2out.c" 28678)
+  (!srcfileloc  "dwarf2out.c" 28684)
   nil )
  (!pair  "inline_entry_data_hasher"
   (!type already_seen 1346)
-  (!srcfileloc  "dwarf2out.c" 24124)
+  (!srcfileloc  "dwarf2out.c" 24130)
   nil )
  (!pair  "hash_table<inline_entry_data_hasher>"
   (!type already_seen 1347)
-  (!srcfileloc  "dwarf2out.c" 24124)
+  (!srcfileloc  "dwarf2out.c" 24130)
   nil )
  (!pair  "external_ref_hash_type"
   (!type already_seen 1339)
@@ -36783,7 +36783,7 @@
   nil )
  (!pair  "inline_entry_data_table"
   (!type already_seen 1348)
-  (!srcfileloc  "dwarf2out.c" 24124)
+  (!srcfileloc  "dwarf2out.c" 24130)
   nil )
  (!pair  "external_die_map"
   (!type already_seen 1333)
