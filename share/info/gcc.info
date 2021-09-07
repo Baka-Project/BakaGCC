@@ -62878,7 +62878,7 @@ look up both forms.
 * fobjc-std:                             Objective-C and Objective-C++ Dialect Options.
                                                              (line  119)
 * foffload:                              C Dialect Options.  (line  360)
-* foffload <1>:                          C Dialect Options.  (line  373)
+* foffload-options:                      C Dialect Options.  (line  373)
 * fomit-frame-pointer:                   Optimize Options.   (line  250)
 * fopenacc:                              C Dialect Options.  (line  388)
 * fopenacc-dim:                          C Dialect Options.  (line  397)
