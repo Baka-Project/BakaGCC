@@ -133,7 +133,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2021-09-10" "gcc-12.0.0" "GNU"
+.TH GCC 1 "2021-09-11" "gcc-12.0.0" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -912,7 +912,8 @@ in the following sections.
 .Sp
 \&\fIeBPF Options\fR
 \&\fB\-mbig\-endian \-mlittle\-endian \-mkernel=\fR\fIversion\fR
-\&\fB\-mframe\-limit=\fR\fIbytes\fR \fB\-mxbpf \-mco\-re \-mno\-co\-re\fR
+\&\fB\-mframe\-limit=\fR\fIbytes\fR \fB\-mxbpf \-mco\-re \-mno\-co\-re
+\&\-mjmpext \-mjmp32 \-malu32 \-mcpu=\fR\fIversion\fR
 .Sp
 \&\fI\s-1FR30\s0 Options\fR
 \&\fB\-msmall\-model  \-mno\-lsim\fR
@@ -21974,8 +21975,47 @@ Generate code for a big-endian target.
 .IP "\fB\-mlittle\-endian\fR" 4
 .IX Item "-mlittle-endian"
 Generate code for a little-endian target.  This is the default.
+.IP "\fB\-mjmpext\fR" 4
+.IX Item "-mjmpext"
+Enable generation of extra conditional-branch instructions.
+Enabled for \s-1CPU\s0 v2 and above.
+.IP "\fB\-mjmp32\fR" 4
+.IX Item "-mjmp32"
+Enable 32\-bit jump instructions. Enabled for \s-1CPU\s0 v3 and above.
+.IP "\fB\-malu32\fR" 4
+.IX Item "-malu32"
+Enable 32\-bit \s-1ALU\s0 instructions. Enabled for \s-1CPU\s0 v3 and above.
+.IP "\fB\-mcpu=\fR\fIversion\fR" 4
+.IX Item "-mcpu=version"
+This specifies which version of the eBPF \s-1ISA\s0 to target. Newer versions
+may not be supported by all kernels. The default is \fBv3\fR.
+.Sp
+Supported values for \fIversion\fR are:
+.RS 4
+.IP "\fBv1\fR" 4
+.IX Item "v1"
+The first stable eBPF \s-1ISA\s0 with no special features or extensions.
+.IP "\fBv2\fR" 4
+.IX Item "v2"
+Supports the jump extensions, as in \fB\-mjmpext\fR.
+.IP "\fBv3\fR" 4
+.IX Item "v3"
+All features of v2, plus:
+.RS 4
+.IP "\-<32\-bit jump operations, as in \fB\-mjmp32\fR>" 4
+.IX Item "-<32-bit jump operations, as in -mjmp32>"
+.PD 0
+.IP "\-<32\-bit \s-1ALU\s0 operations, as in \fB\-malu32\fR>" 4
+.IX Item "-<32-bit ALU operations, as in -malu32>"
+.RE
+.RS 4
+.RE
+.RE
+.RS 4
+.RE
 .IP "\fB\-mco\-re\fR" 4
 .IX Item "-mco-re"
+.PD
 Enable \s-1BPF\s0 Compile Once \- Run Everywhere (CO-RE) support. Requires and
 is implied by \fB\-gbtf\fR.
 .IP "\fB\-mno\-co\-re\fR" 4
