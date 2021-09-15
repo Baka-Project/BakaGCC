@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210914 (experimental)")
+(!version  "12.0.0 20210915 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 228 0
@@ -26110,7 +26110,7 @@
   nil 0 nil nil )
  
  (!type struct 1835 nil  gc_used "value_annotation_hasher"
-  (!srcfileloc  "ada/gcc-interface/decl.c" 156)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 157)
   (!fields 0 )
   nil 1 nil nil )
  
@@ -26119,11 +26119,11 @@
    (!type already_seen 1836)
   )
   gc_pointed_to "hash_table<value_annotation_hasher>"
-  (!srcfileloc  "ada/gcc-interface/decl.c" 156)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 157)
   (!fields 1 
    (!pair  "value_annotation_hasher"
     (!type already_seen 1835)
-    (!srcfileloc  "ada/gcc-interface/decl.c" 156)
+    (!srcfileloc  "ada/gcc-interface/decl.c" 157)
     nil )
   )
  )
@@ -26133,19 +26133,19 @@
    (!type already_seen 1838)
   )
   gc_pointed_to "vec<Entity_Id,va_gc_atomic>"
-  (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 163)
   (!fields 2 
    (!pair  "va_gc_atomic"
     (!type undefined 1840 nil  gc_unused "va_gc_atomic"
-     (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+     (!srcfileloc  "ada/gcc-interface/decl.c" 163)
     )
-    (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+    (!srcfileloc  "ada/gcc-interface/decl.c" 163)
     nil )
    (!pair  "Entity_Id"
     (!type undefined 1841 nil  gc_unused "Entity_Id"
-     (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+     (!srcfileloc  "ada/gcc-interface/decl.c" 163)
     )
-    (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+    (!srcfileloc  "ada/gcc-interface/decl.c" 163)
     nil )
   )
  )
@@ -26155,15 +26155,15 @@
  (!type already_seen 1840)
  
  (!type struct 1842 nil  gc_pointed_to "tree_entity_vec_map"
-  (!srcfileloc  "ada/gcc-interface/decl.c" 163)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 164)
   (!fields 2 
    (!pair  "base"
     (!type already_seen 960)
-    (!srcfileloc  "ada/gcc-interface/decl.c" 161)
+    (!srcfileloc  "ada/gcc-interface/decl.c" 162)
     nil )
    (!pair  "to"
     (!type already_seen 1839)
-    (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+    (!srcfileloc  "ada/gcc-interface/decl.c" 163)
     nil )
   )
   (!options 
@@ -26172,7 +26172,7 @@
   1 nil nil )
  
  (!type struct 1843 nil  gc_used "dummy_type_hasher"
-  (!srcfileloc  "ada/gcc-interface/decl.c" 197)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 198)
   (!fields 0 )
   nil 1 nil nil )
  
@@ -26181,16 +26181,16 @@
    (!type already_seen 1844)
   )
   gc_pointed_to "hash_table<dummy_type_hasher>"
-  (!srcfileloc  "ada/gcc-interface/decl.c" 197)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 198)
   (!fields 1 
    (!pair  "dummy_type_hasher"
     (!type already_seen 1843)
-    (!srcfileloc  "ada/gcc-interface/decl.c" 197)
+    (!srcfileloc  "ada/gcc-interface/decl.c" 198)
     nil )
   )
  )
  
- (!type struct 1846 nil  gc_unused "anonymous:../../gcc/gcc/ada/gcc-interface/decl.c:258"nil 
+ (!type struct 1846 nil  gc_unused "anonymous:../../gcc/gcc/ada/gcc-interface/decl.c:259"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -31369,7 +31369,7 @@
   nil )
  (!pair  "builtin_type"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6137)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6140)
   nil )
  (!pair  "pad_type_hasher"
   (!type already_seen 1869)
@@ -31417,47 +31417,47 @@
   nil )
  (!pair  "vinfo_t"
   (!type already_seen 1848)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 7727)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 7740)
   nil )
  (!pair  "intrin_binding_t"
   (!type already_seen 1846)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 262)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 263)
   nil )
  (!pair  "dummy_type_hasher"
   (!type already_seen 1843)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 197)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 198)
   nil )
  (!pair  "hash_table<dummy_type_hasher>"
   (!type already_seen 1844)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 197)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 198)
   nil )
  (!pair  "va_gc_atomic"
   (!type already_seen 1840)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 163)
   nil )
  (!pair  "Entity_Id"
   (!type already_seen 1841)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 163)
   nil )
  (!pair  "vec<Entity_Id,va_gc_atomic>"
   (!type already_seen 1838)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 162)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 163)
   nil )
  (!pair  "value_annotation_hasher"
   (!type already_seen 1835)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 156)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 157)
   nil )
  (!pair  "hash_table<value_annotation_hasher>"
   (!type already_seen 1836)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 156)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 157)
   nil )
  (!pair  "variant_desc"
   (!type already_seen 1834)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 131)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 132)
   nil )
  (!pair  "subst_pair"
   (!type already_seen 1833)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 113)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 114)
   nil )
  (!pair  "rewrite_fn"
   (!type already_seen 2)
@@ -34160,7 +34160,7 @@
   (!srcfileloc  "gengtype.c" 5201)
   nil )
 )
-(!variables 746
+(!variables 754
  (!pair  "objc_eh_personality_decl"
   (!type already_seen 23)
   (!srcfileloc  "objc/objc-next-runtime-abi-02.c" 3843)
@@ -35487,11 +35487,11 @@
   nil )
  (!pair  "start_cleanup_cnt"
   (!type already_seen 2)
-  (!srcfileloc  "cp/decl.c" 9115)
+  (!srcfileloc  "cp/decl.c" 9148)
   nil )
  (!pair  "decomp_type_table"
   (!type already_seen 924)
-  (!srcfileloc  "cp/decl.c" 8568)
+  (!srcfileloc  "cp/decl.c" 8601)
   (!options 
    (!option cache string  "")
   )
@@ -35539,19 +35539,51 @@
  )
  (!pair  "to_ramp"
   (!type already_seen 390)
-  (!srcfileloc  "cp/coroutines.cc" 532)
+  (!srcfileloc  "cp/coroutines.cc" 554)
   nil )
  (!pair  "void_coro_handle_type"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 250)
+  (!srcfileloc  "cp/coroutines.cc" 272)
   nil )
  (!pair  "coro_handle_templ"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 249)
+  (!srcfileloc  "cp/coroutines.cc" 271)
   nil )
  (!pair  "coro_traits_templ"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 248)
+  (!srcfileloc  "cp/coroutines.cc" 270)
+  nil )
+ (!pair  "coro_frame_i_a_r_c_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 227)
+  nil )
+ (!pair  "coro_actor_continue_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 226)
+  nil )
+ (!pair  "coro_self_handle_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 225)
+  nil )
+ (!pair  "coro_resume_index_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 224)
+  nil )
+ (!pair  "coro_frame_needs_free_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 223)
+  nil )
+ (!pair  "coro_promise_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 222)
+  nil )
+ (!pair  "coro_destroy_fn_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 221)
+  nil )
+ (!pair  "coro_resume_fn_id"
+  (!type already_seen 23)
+  (!srcfileloc  "cp/coroutines.cc" 220)
   nil )
  (!pair  "coro_await_resume_identifier"
   (!type already_seen 23)
@@ -35673,7 +35705,7 @@
  )
  (!pair  "cv_cache"
   (!type already_seen 390)
-  (!srcfileloc  "cp/constexpr.c" 7600)
+  (!srcfileloc  "cp/constexpr.c" 7622)
   (!options 
    (!option deletable string  "")
   )
@@ -35935,17 +35967,17 @@
   (!type array 2351 nil  gc_used "(int) ATTR_LAST" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6307)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6310)
   nil )
  (!pair  "builtin_types"
   (!type array 2352 nil  gc_used "(int) BT_LAST + 1" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6140)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6143)
   nil )
  (!pair  "dummy_global"
   (!type already_seen 23)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 5893)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 5896)
   nil )
  (!pair  "pad_type_hash_table"
   (!type already_seen 1871)
@@ -36064,14 +36096,14 @@
   nil )
  (!pair  "dummy_to_subprog_map"
   (!type already_seen 1845)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 197)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 198)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "annotate_value_cache"
   (!type already_seen 1837)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 156)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 157)
   (!options 
    (!option cache string  "")
   )
