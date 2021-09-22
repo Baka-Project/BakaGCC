@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20210920 (experimental)")
+(!version  "12.0.0 20210922 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 230 0
@@ -26541,23 +26541,23 @@
   nil 0 nil nil )
  
  (!type struct 1883 nil  gc_used "lazy_hex_fp_value_struct"
-  (!srcfileloc  "c-family/c-cppbuiltin.c" 1709)
+  (!srcfileloc  "c-family/c-cppbuiltin.c" 1734)
   (!fields 4 
    (!pair  "hex_str"
     (!type already_seen 11)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1705)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1730)
     nil )
    (!pair  "mode"
     (!type already_seen 2)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1706)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1731)
     nil )
    (!pair  "digits"
     (!type already_seen 2)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1707)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1732)
     nil )
    (!pair  "fp_suffix"
     (!type already_seen 11)
-    (!srcfileloc  "c-family/c-cppbuiltin.c" 1708)
+    (!srcfileloc  "c-family/c-cppbuiltin.c" 1733)
     nil )
   )
   nil 774 nil nil )
@@ -31243,7 +31243,7 @@
   nil )
  (!pair  "vinfo_t"
   (!type already_seen 1824)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 7740)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 7744)
   nil )
  (!pair  "intrin_binding_t"
   (!type already_seen 1822)
@@ -35701,13 +35701,13 @@
   nil )
  (!pair  "lazy_hex_fp_value_count"
   (!type already_seen 2)
-  (!srcfileloc  "c-family/c-cppbuiltin.c" 1718)
+  (!srcfileloc  "c-family/c-cppbuiltin.c" 1743)
   nil )
  (!pair  "lazy_hex_fp_values"
   (!type array 2322 nil  gc_used "LAZY_HEX_FP_VALUES_CNT" 
    (!type already_seen 1883)
   )
-  (!srcfileloc  "c-family/c-cppbuiltin.c" 1717)
+  (!srcfileloc  "c-family/c-cppbuiltin.c" 1742)
   nil )
  (!pair  "g_string_concat_db"
   (!type already_seen 719)
