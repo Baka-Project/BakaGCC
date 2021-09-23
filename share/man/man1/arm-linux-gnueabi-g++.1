@@ -133,7 +133,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2021-09-22" "gcc-12.0.0" "GNU"
+.TH GCC 1 "2021-09-23" "gcc-12.0.0" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -6127,9 +6127,11 @@ bracketed, but that for \f(CW\*(C`b\*(C'\fR is fully bracketed.
 .Ve
 .Sp
 This warning is enabled by \fB\-Wall\fR.
-.IP "\fB\-Wmissing\-include\-dirs\fR (C, \*(C+, Objective-C and Objective\-\*(C+ only)" 4
-.IX Item "-Wmissing-include-dirs (C, , Objective-C and Objective- only)"
-Warn if a user-supplied include directory does not exist.
+.IP "\fB\-Wmissing\-include\-dirs\fR (C, \*(C+, Objective-C, Objective\-\*(C+ and Fortran only)" 4
+.IX Item "-Wmissing-include-dirs (C, , Objective-C, Objective- and Fortran only)"
+Warn if a user-supplied include directory does not exist. This opions is disabled
+by default for C, \*(C+, Objective-C and Objective\-\*(C+. For Fortran, it is partially
+enabled by default by warning for \-I and \-J, only.
 .IP "\fB\-Wno\-missing\-profile\fR" 4
 .IX Item "-Wno-missing-profile"
 This option controls warnings if feedback profiles are missing when using the

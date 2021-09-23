@@ -6049,8 +6049,11 @@ unless optimization is enabled.
 
      This warning is enabled by '-Wall'.
 
-'-Wmissing-include-dirs (C, C++, Objective-C and Objective-C++ only)'
-     Warn if a user-supplied include directory does not exist.
+'-Wmissing-include-dirs (C, C++, Objective-C, Objective-C++ and Fortran only)'
+     Warn if a user-supplied include directory does not exist.  This
+     opions is disabled by default for C, C++, Objective-C and
+     Objective-C++.  For Fortran, it is partially enabled by default by
+     warning for -I and -J, only.
 
 '-Wno-missing-profile'
      This option controls warnings if feedback profiles are missing when
@@ -65591,27 +65594,27 @@ look up both forms.
 * version:                               Overall Options.    (line  593)
 * w:                                     Warning Options.    (line   25)
 * W:                                     Warning Options.    (line  217)
-* W <1>:                                 Warning Options.    (line 2797)
-* W <2>:                                 Warning Options.    (line 2926)
+* W <1>:                                 Warning Options.    (line 2800)
+* W <2>:                                 Warning Options.    (line 2929)
 * W <3>:                                 Incompatibilities.  (line   64)
 * Wa:                                    Assembler Options.  (line    9)
 * Wabi:                                  Warning Options.    (line  262)
 * Wabi-tag:                              C++ Dialect Options.
                                                              (line  565)
-* Wabsolute-value:                       Warning Options.    (line 2286)
+* Wabsolute-value:                       Warning Options.    (line 2289)
 * Waddr-space-convert:                   AVR Options.        (line  308)
-* Waddress:                              Warning Options.    (line 2667)
-* Waddress-of-packed-member:             Warning Options.    (line 2680)
-* Waggregate-return:                     Warning Options.    (line 2708)
-* Waggressive-loop-optimizations:        Warning Options.    (line 2713)
+* Waddress:                              Warning Options.    (line 2670)
+* Waddress-of-packed-member:             Warning Options.    (line 2683)
+* Waggregate-return:                     Warning Options.    (line 2711)
+* Waggressive-loop-optimizations:        Warning Options.    (line 2716)
 * Waligned-new:                          C++ Dialect Options.
                                                              (line 1146)
 * Wall:                                  Warning Options.    (line  138)
 * Wall <1>:                              Standard Libraries. (line    6)
-* Walloc-size-larger-than=:              Warning Options.    (line 1685)
-* Walloc-zero:                           Warning Options.    (line 1675)
-* Walloca:                               Warning Options.    (line 1700)
-* Walloca-larger-than=:                  Warning Options.    (line 1703)
+* Walloc-size-larger-than=:              Warning Options.    (line 1688)
+* Walloc-zero:                           Warning Options.    (line 1678)
+* Walloca:                               Warning Options.    (line 1703)
+* Walloca-larger-than=:                  Warning Options.    (line 1706)
 * Wanalyzer-double-fclose:               Static Analyzer Options.
                                                              (line   53)
 * Wanalyzer-double-free:                 Static Analyzer Options.
@@ -65656,35 +65659,35 @@ look up both forms.
                                                              (line  211)
 * Wanalyzer-write-to-string-literal:     Static Analyzer Options.
                                                              (line  221)
-* Warith-conversion:                     Warning Options.    (line 1768)
-* Warray-bounds:                         Warning Options.    (line 1781)
+* Warith-conversion:                     Warning Options.    (line 1771)
+* Warray-bounds:                         Warning Options.    (line 1784)
 * Wassign-intercept:                     Objective-C and Objective-C++ Dialect Options.
                                                              (line  170)
-* Wattribute-alias:                      Warning Options.    (line 1842)
-* Wattribute-warning:                    Warning Options.    (line 2893)
-* Wattributes:                           Warning Options.    (line 2718)
-* Wbad-function-cast:                    Warning Options.    (line 2355)
-* Wbool-compare:                         Warning Options.    (line 1874)
-* Wbool-operation:                       Warning Options.    (line 1883)
-* Wbuiltin-declaration-mismatch:         Warning Options.    (line 2724)
-* Wbuiltin-macro-redefined:              Warning Options.    (line 2745)
-* Wc++-compat:                           Warning Options.    (line 2383)
-* Wc++11-compat:                         Warning Options.    (line 2388)
-* Wc++11-extensions:                     Warning Options.    (line 2406)
-* Wc++14-compat:                         Warning Options.    (line 2394)
-* Wc++14-extensions:                     Warning Options.    (line 2411)
-* Wc++17-compat:                         Warning Options.    (line 2398)
-* Wc++17-extensions:                     Warning Options.    (line 2416)
-* Wc++20-compat:                         Warning Options.    (line 2402)
-* Wc++20-extensions:                     Warning Options.    (line 2421)
-* Wc++23-extensions:                     Warning Options.    (line 2426)
-* Wc11-c2x-compat:                       Warning Options.    (line 2375)
-* Wc90-c99-compat:                       Warning Options.    (line 2360)
-* Wc99-c11-compat:                       Warning Options.    (line 2367)
-* Wcast-align:                           Warning Options.    (line 2447)
-* Wcast-align=strict:                    Warning Options.    (line 2453)
-* Wcast-function-type:                   Warning Options.    (line 2458)
-* Wcast-qual:                            Warning Options.    (line 2431)
+* Wattribute-alias:                      Warning Options.    (line 1845)
+* Wattribute-warning:                    Warning Options.    (line 2896)
+* Wattributes:                           Warning Options.    (line 2721)
+* Wbad-function-cast:                    Warning Options.    (line 2358)
+* Wbool-compare:                         Warning Options.    (line 1877)
+* Wbool-operation:                       Warning Options.    (line 1886)
+* Wbuiltin-declaration-mismatch:         Warning Options.    (line 2727)
+* Wbuiltin-macro-redefined:              Warning Options.    (line 2748)
+* Wc++-compat:                           Warning Options.    (line 2386)
+* Wc++11-compat:                         Warning Options.    (line 2391)
+* Wc++11-extensions:                     Warning Options.    (line 2409)
+* Wc++14-compat:                         Warning Options.    (line 2397)
+* Wc++14-extensions:                     Warning Options.    (line 2414)
+* Wc++17-compat:                         Warning Options.    (line 2401)
+* Wc++17-extensions:                     Warning Options.    (line 2419)
+* Wc++20-compat:                         Warning Options.    (line 2405)
+* Wc++20-extensions:                     Warning Options.    (line 2424)
+* Wc++23-extensions:                     Warning Options.    (line 2429)
+* Wc11-c2x-compat:                       Warning Options.    (line 2378)
+* Wc90-c99-compat:                       Warning Options.    (line 2363)
+* Wc99-c11-compat:                       Warning Options.    (line 2370)
+* Wcast-align:                           Warning Options.    (line 2450)
+* Wcast-align=strict:                    Warning Options.    (line 2456)
+* Wcast-function-type:                   Warning Options.    (line 2461)
+* Wcast-qual:                            Warning Options.    (line 2434)
 * Wcatch-value:                          C++ Dialect Options.
                                                              (line 1193)
 * Wchar-subscripts:                      Warning Options.    (line  372)
@@ -65692,14 +65695,14 @@ look up both forms.
                                                              (line 1124)
 * Wclass-memaccess:                      C++ Dialect Options.
                                                              (line  751)
-* Wclobbered:                            Warning Options.    (line 2484)
+* Wclobbered:                            Warning Options.    (line 2487)
 * Wcomma-subscript:                      C++ Dialect Options.
                                                              (line  570)
-* Wcomment:                              Warning Options.    (line 2297)
-* Wcomments:                             Warning Options.    (line 2297)
+* Wcomment:                              Warning Options.    (line 2300)
+* Wcomments:                             Warning Options.    (line 2300)
 * Wconditionally-supported:              C++ Dialect Options.
                                                              (line 1201)
-* Wconversion:                           Warning Options.    (line 2488)
+* Wconversion:                           Warning Options.    (line 2491)
 * Wconversion-null:                      C++ Dialect Options.
                                                              (line 1278)
 * Wcoverage-invalid-line-number:         Warning Options.    (line  391)
@@ -65709,54 +65712,54 @@ look up both forms.
                                                              (line  582)
 * Wctor-dtor-privacy:                    C++ Dialect Options.
                                                              (line  598)
-* Wdangling-else:                        Warning Options.    (line 2509)
-* Wdate-time:                            Warning Options.    (line 2543)
-* Wdeclaration-after-statement:          Warning Options.    (line 2103)
+* Wdangling-else:                        Warning Options.    (line 2512)
+* Wdate-time:                            Warning Options.    (line 2546)
+* Wdeclaration-after-statement:          Warning Options.    (line 2106)
 * Wdelete-incomplete:                    C++ Dialect Options.
                                                              (line 1204)
 * Wdelete-non-virtual-dtor:              C++ Dialect Options.
                                                              (line  605)
-* Wdeprecated:                           Warning Options.    (line 2900)
+* Wdeprecated:                           Warning Options.    (line 2903)
 * Wdeprecated-copy:                      C++ Dialect Options.
                                                              (line  612)
-* Wdeprecated-declarations:              Warning Options.    (line 2904)
+* Wdeprecated-declarations:              Warning Options.    (line 2907)
 * Wdeprecated-enum-enum-conversion:      C++ Dialect Options.
                                                              (line  620)
 * Wdeprecated-enum-float-conversion:     C++ Dialect Options.
                                                              (line  634)
-* Wdesignated-init:                      Warning Options.    (line 3231)
-* Wdisabled-optimization:                Warning Options.    (line 3182)
-* Wdiscarded-array-qualifiers:           Warning Options.    (line 1922)
-* Wdiscarded-qualifiers:                 Warning Options.    (line 1916)
-* Wdiv-by-zero:                          Warning Options.    (line 1963)
+* Wdesignated-init:                      Warning Options.    (line 3234)
+* Wdisabled-optimization:                Warning Options.    (line 3185)
+* Wdiscarded-array-qualifiers:           Warning Options.    (line 1925)
+* Wdiscarded-qualifiers:                 Warning Options.    (line 1919)
+* Wdiv-by-zero:                          Warning Options.    (line 1966)
 * Wdouble-promotion:                     Warning Options.    (line  404)
 * Wduplicate-decl-specifier:             Warning Options.    (line  422)
-* Wduplicated-branches:                  Warning Options.    (line 1893)
-* Wduplicated-cond:                      Warning Options.    (line 1904)
+* Wduplicated-branches:                  Warning Options.    (line 1896)
+* Wduplicated-cond:                      Warning Options.    (line 1907)
 * weak_reference_mismatches:             Darwin Options.     (line  196)
 * Weffc++:                               C++ Dialect Options.
                                                              (line  917)
-* Wempty-body:                           Warning Options.    (line 2548)
-* Wendif-labels:                         Warning Options.    (line 2341)
-* Wendif-labels <1>:                     Warning Options.    (line 2552)
-* Wenum-compare:                         Warning Options.    (line 2555)
-* Wenum-conversion:                      Warning Options.    (line 2561)
+* Wempty-body:                           Warning Options.    (line 2551)
+* Wendif-labels:                         Warning Options.    (line 2344)
+* Wendif-labels <1>:                     Warning Options.    (line 2555)
+* Wenum-compare:                         Warning Options.    (line 2558)
+* Wenum-conversion:                      Warning Options.    (line 2564)
 * Werror:                                Warning Options.    (line   28)
 * Werror=:                               Warning Options.    (line   31)
 * Wexceptions:                           C++ Dialect Options.
                                                              (line  945)
-* Wexpansion-to-defined:                 Warning Options.    (line 2316)
+* Wexpansion-to-defined:                 Warning Options.    (line 2319)
 * Wextra:                                Warning Options.    (line  217)
-* Wextra <1>:                            Warning Options.    (line 2797)
-* Wextra <2>:                            Warning Options.    (line 2926)
+* Wextra <1>:                            Warning Options.    (line 2800)
+* Wextra <2>:                            Warning Options.    (line 2929)
 * Wextra-semi:                           C++ Dialect Options.
                                                              (line 1209)
 * Wfatal-errors:                         Warning Options.    (line   48)
-* Wfloat-conversion:                     Warning Options.    (line 2589)
-* Wfloat-equal:                          Warning Options.    (line 2003)
+* Wfloat-conversion:                     Warning Options.    (line 2592)
+* Wfloat-equal:                          Warning Options.    (line 2006)
 * Wformat:                               Warning Options.    (line  427)
 * Wformat <1>:                           Warning Options.    (line  452)
-* Wformat <2>:                           Warning Options.    (line 1646)
+* Wformat <2>:                           Warning Options.    (line 1649)
 * Wformat <3>:                           Common Function Attributes.
                                                              (line  402)
 * Wformat-contains-nul:                  Warning Options.    (line  466)
@@ -65775,9 +65778,9 @@ look up both forms.
 * Wformat=:                              Warning Options.    (line  427)
 * Wformat=1:                             Warning Options.    (line  452)
 * Wformat=2:                             Warning Options.    (line  461)
-* Wframe-address:                        Warning Options.    (line 1910)
-* Wframe-larger-than=:                   Warning Options.    (line 2177)
-* Wfree-nonheap-object:                  Warning Options.    (line 2194)
+* Wframe-address:                        Warning Options.    (line 1913)
+* Wframe-larger-than=:                   Warning Options.    (line 2180)
+* Wfree-nonheap-object:                  Warning Options.    (line 2197)
 * whatsloaded:                           Darwin Options.     (line  196)
 * whyload:                               Darwin Options.     (line  196)
 * Wif-not-aligned:                       Warning Options.    (line  780)
@@ -65790,81 +65793,81 @@ look up both forms.
 * Wimplicit-int:                         Warning Options.    (line  647)
 * Winaccessible-base:                    C++ Dialect Options.
                                                              (line 1213)
-* Wincompatible-pointer-types:           Warning Options.    (line 1928)
+* Wincompatible-pointer-types:           Warning Options.    (line 1931)
 * Winherited-variadic-ctor:              C++ Dialect Options.
                                                              (line 1224)
 * Winit-list-lifetime:                   C++ Dialect Options.
                                                              (line  648)
 * Winit-self:                            Warning Options.    (line  632)
-* Winline:                               Warning Options.    (line 3019)
+* Winline:                               Warning Options.    (line 3022)
 * Winline <1>:                           Inline.             (line   60)
-* Wint-conversion:                       Warning Options.    (line 1934)
-* Wint-in-bool-context:                  Warning Options.    (line 3067)
-* Wint-to-pointer-cast:                  Warning Options.    (line 3075)
-* Winterference-size:                    Warning Options.    (line 3032)
+* Wint-conversion:                       Warning Options.    (line 1937)
+* Wint-in-bool-context:                  Warning Options.    (line 3070)
+* Wint-to-pointer-cast:                  Warning Options.    (line 3078)
+* Winterference-size:                    Warning Options.    (line 3035)
 * Winvalid-imported-macros:              C++ Dialect Options.
                                                              (line  683)
-* Winvalid-memory-model:                 Warning Options.    (line 1290)
+* Winvalid-memory-model:                 Warning Options.    (line 1293)
 * Winvalid-offsetof:                     C++ Dialect Options.
                                                              (line 1229)
-* Winvalid-pch:                          Warning Options.    (line 3084)
-* Wjump-misses-init:                     Warning Options.    (line 2566)
+* Winvalid-pch:                          Warning Options.    (line 3087)
+* Wjump-misses-init:                     Warning Options.    (line 2569)
 * Wl:                                    Link Options.       (line  335)
-* Wlarger-than-BYTE-SIZE:                Warning Options.    (line 2162)
-* Wlarger-than=:                         Warning Options.    (line 2162)
+* Wlarger-than-BYTE-SIZE:                Warning Options.    (line 2165)
+* Wlarger-than=:                         Warning Options.    (line 2165)
 * Wliteral-suffix:                       C++ Dialect Options.
                                                              (line  689)
-* Wlogical-not-parentheses:              Warning Options.    (line 2693)
-* Wlogical-op:                           Warning Options.    (line 2685)
-* Wlong-long:                            Warning Options.    (line 3088)
-* Wlto-type-mismatch:                    Warning Options.    (line 3225)
+* Wlogical-not-parentheses:              Warning Options.    (line 2696)
+* Wlogical-op:                           Warning Options.    (line 2688)
+* Wlong-long:                            Warning Options.    (line 3091)
+* Wlto-type-mismatch:                    Warning Options.    (line 3228)
 * Wmain:                                 Warning Options.    (line  802)
-* Wmaybe-uninitialized:                  Warning Options.    (line 1307)
-* Wmemset-elt-size:                      Warning Options.    (line 2648)
-* Wmemset-transposed-args:               Warning Options.    (line 2656)
+* Wmaybe-uninitialized:                  Warning Options.    (line 1310)
+* Wmemset-elt-size:                      Warning Options.    (line 2651)
+* Wmemset-transposed-args:               Warning Options.    (line 2659)
 * Wmisleading-indentation:               Warning Options.    (line  809)
-* Wmismatched-dealloc:                   Warning Options.    (line  916)
+* Wmismatched-dealloc:                   Warning Options.    (line  919)
 * Wmismatched-new-delete:                C++ Dialect Options.
                                                              (line 1008)
 * Wmismatched-tags:                      C++ Dialect Options.
                                                              (line 1039)
 * Wmissing-attributes:                   Warning Options.    (line  843)
 * Wmissing-braces:                       Warning Options.    (line  887)
-* Wmissing-declarations:                 Warning Options.    (line 2787)
-* Wmissing-field-initializers:           Warning Options.    (line 2797)
-* Wmissing-format-attribute:             Warning Options.    (line 1646)
+* Wmissing-declarations:                 Warning Options.    (line 2790)
+* Wmissing-field-initializers:           Warning Options.    (line 2800)
+* Wmissing-format-attribute:             Warning Options.    (line 1649)
 * Wmissing-include-dirs:                 Warning Options.    (line  897)
-* Wmissing-noreturn:                     Warning Options.    (line 1632)
-* Wmissing-parameter-type:               Warning Options.    (line 2769)
-* Wmissing-profile:                      Warning Options.    (line  900)
-* Wmissing-prototypes:                   Warning Options.    (line 2777)
-* Wmissing-requires:                     Warning Options.    (line 2827)
+* Wmissing-noreturn:                     Warning Options.    (line 1635)
+* Wmissing-parameter-type:               Warning Options.    (line 2772)
+* Wmissing-profile:                      Warning Options.    (line  903)
+* Wmissing-prototypes:                   Warning Options.    (line 2780)
+* Wmissing-requires:                     Warning Options.    (line 2830)
 * Wmisspelled-isr:                       AVR Options.        (line  313)
-* Wmultichar:                            Warning Options.    (line 2844)
+* Wmultichar:                            Warning Options.    (line 2847)
 * Wmultiple-inheritance:                 C++ Dialect Options.
                                                              (line 1064)
-* Wmultistatement-macros:                Warning Options.    (line  947)
+* Wmultistatement-macros:                Warning Options.    (line  950)
 * Wnamespaces:                           C++ Dialect Options.
                                                              (line 1087)
 * Wnarrowing:                            C++ Dialect Options.
                                                              (line  715)
-* Wnested-externs:                       Warning Options.    (line 3016)
+* Wnested-externs:                       Warning Options.    (line 3019)
 * Wno-abi:                               Warning Options.    (line  262)
-* Wno-absolute-value:                    Warning Options.    (line 2286)
+* Wno-absolute-value:                    Warning Options.    (line 2289)
 * Wno-addr-space-convert:                AVR Options.        (line  308)
-* Wno-address:                           Warning Options.    (line 2667)
-* Wno-address-of-packed-member:          Warning Options.    (line 2680)
-* Wno-aggregate-return:                  Warning Options.    (line 2708)
-* Wno-aggressive-loop-optimizations:     Warning Options.    (line 2713)
+* Wno-address:                           Warning Options.    (line 2670)
+* Wno-address-of-packed-member:          Warning Options.    (line 2683)
+* Wno-aggregate-return:                  Warning Options.    (line 2711)
+* Wno-aggressive-loop-optimizations:     Warning Options.    (line 2716)
 * Wno-aligned-new:                       C++ Dialect Options.
                                                              (line 1146)
 * Wno-all:                               Warning Options.    (line  138)
-* Wno-alloc-size-larger-than:            Warning Options.    (line 1685)
-* Wno-alloc-size-larger-than <1>:        Warning Options.    (line 1696)
-* Wno-alloc-zero:                        Warning Options.    (line 1675)
-* Wno-alloca:                            Warning Options.    (line 1700)
-* Wno-alloca-larger-than:                Warning Options.    (line 1703)
-* Wno-alloca-larger-than <1>:            Warning Options.    (line 1764)
+* Wno-alloc-size-larger-than:            Warning Options.    (line 1688)
+* Wno-alloc-size-larger-than <1>:        Warning Options.    (line 1699)
+* Wno-alloc-zero:                        Warning Options.    (line 1678)
+* Wno-alloca:                            Warning Options.    (line 1703)
+* Wno-alloca-larger-than:                Warning Options.    (line 1706)
+* Wno-alloca-larger-than <1>:            Warning Options.    (line 1767)
 * Wno-analyzer-double-fclose:            Static Analyzer Options.
                                                              (line   53)
 * Wno-analyzer-double-free:              Static Analyzer Options.
@@ -65909,35 +65912,35 @@ look up both forms.
                                                              (line  211)
 * Wno-analyzer-write-to-string-literal:  Static Analyzer Options.
                                                              (line  221)
-* Wno-arith-conversion:                  Warning Options.    (line 1768)
-* Wno-array-bounds:                      Warning Options.    (line 1781)
-* Wno-array-parameter:                   Warning Options.    (line 1798)
+* Wno-arith-conversion:                  Warning Options.    (line 1771)
+* Wno-array-bounds:                      Warning Options.    (line 1784)
+* Wno-array-parameter:                   Warning Options.    (line 1801)
 * Wno-assign-intercept:                  Objective-C and Objective-C++ Dialect Options.
                                                              (line  170)
-* Wno-attribute-alias:                   Warning Options.    (line 1842)
-* Wno-attribute-warning:                 Warning Options.    (line 2893)
-* Wno-attributes:                        Warning Options.    (line 2718)
-* Wno-bad-function-cast:                 Warning Options.    (line 2355)
-* Wno-bool-compare:                      Warning Options.    (line 1874)
-* Wno-bool-operation:                    Warning Options.    (line 1883)
-* Wno-builtin-declaration-mismatch:      Warning Options.    (line 2724)
-* Wno-builtin-macro-redefined:           Warning Options.    (line 2745)
-* Wno-c++-compat:                        Warning Options.    (line 2383)
-* Wno-c++11-compat:                      Warning Options.    (line 2388)
-* Wno-c++11-extensions:                  Warning Options.    (line 2406)
-* Wno-c++14-compat:                      Warning Options.    (line 2394)
-* Wno-c++14-extensions:                  Warning Options.    (line 2411)
-* Wno-c++17-compat:                      Warning Options.    (line 2398)
-* Wno-c++17-extensions:                  Warning Options.    (line 2416)
-* Wno-c++20-compat:                      Warning Options.    (line 2402)
-* Wno-c++20-extensions:                  Warning Options.    (line 2421)
-* Wno-c++23-extensions:                  Warning Options.    (line 2426)
-* Wno-c11-c2x-compat:                    Warning Options.    (line 2375)
-* Wno-c90-c99-compat:                    Warning Options.    (line 2360)
-* Wno-c99-c11-compat:                    Warning Options.    (line 2367)
-* Wno-cast-align:                        Warning Options.    (line 2447)
-* Wno-cast-function-type:                Warning Options.    (line 2458)
-* Wno-cast-qual:                         Warning Options.    (line 2431)
+* Wno-attribute-alias:                   Warning Options.    (line 1845)
+* Wno-attribute-warning:                 Warning Options.    (line 2896)
+* Wno-attributes:                        Warning Options.    (line 2721)
+* Wno-bad-function-cast:                 Warning Options.    (line 2358)
+* Wno-bool-compare:                      Warning Options.    (line 1877)
+* Wno-bool-operation:                    Warning Options.    (line 1886)
+* Wno-builtin-declaration-mismatch:      Warning Options.    (line 2727)
+* Wno-builtin-macro-redefined:           Warning Options.    (line 2748)
+* Wno-c++-compat:                        Warning Options.    (line 2386)
+* Wno-c++11-compat:                      Warning Options.    (line 2391)
+* Wno-c++11-extensions:                  Warning Options.    (line 2409)
+* Wno-c++14-compat:                      Warning Options.    (line 2397)
+* Wno-c++14-extensions:                  Warning Options.    (line 2414)
+* Wno-c++17-compat:                      Warning Options.    (line 2401)
+* Wno-c++17-extensions:                  Warning Options.    (line 2419)
+* Wno-c++20-compat:                      Warning Options.    (line 2405)
+* Wno-c++20-extensions:                  Warning Options.    (line 2424)
+* Wno-c++23-extensions:                  Warning Options.    (line 2429)
+* Wno-c11-c2x-compat:                    Warning Options.    (line 2378)
+* Wno-c90-c99-compat:                    Warning Options.    (line 2363)
+* Wno-c99-c11-compat:                    Warning Options.    (line 2370)
+* Wno-cast-align:                        Warning Options.    (line 2450)
+* Wno-cast-function-type:                Warning Options.    (line 2461)
+* Wno-cast-qual:                         Warning Options.    (line 2434)
 * Wno-catch-value:                       C++ Dialect Options.
                                                              (line 1193)
 * Wno-char-subscripts:                   Warning Options.    (line  372)
@@ -65945,12 +65948,12 @@ look up both forms.
                                                              (line 1124)
 * Wno-class-memaccess:                   C++ Dialect Options.
                                                              (line  751)
-* Wno-clobbered:                         Warning Options.    (line 2484)
+* Wno-clobbered:                         Warning Options.    (line 2487)
 * Wno-comma-subscript:                   C++ Dialect Options.
                                                              (line  570)
 * Wno-conditionally-supported:           C++ Dialect Options.
                                                              (line 1201)
-* Wno-conversion:                        Warning Options.    (line 2488)
+* Wno-conversion:                        Warning Options.    (line 2491)
 * Wno-conversion-null:                   C++ Dialect Options.
                                                              (line 1278)
 * Wno-coverage-invalid-line-number:      Warning Options.    (line  391)
@@ -65960,51 +65963,51 @@ look up both forms.
                                                              (line  582)
 * Wno-ctor-dtor-privacy:                 C++ Dialect Options.
                                                              (line  598)
-* Wno-dangling-else:                     Warning Options.    (line 2509)
-* Wno-date-time:                         Warning Options.    (line 2543)
-* Wno-declaration-after-statement:       Warning Options.    (line 2103)
+* Wno-dangling-else:                     Warning Options.    (line 2512)
+* Wno-date-time:                         Warning Options.    (line 2546)
+* Wno-declaration-after-statement:       Warning Options.    (line 2106)
 * Wno-delete-incomplete:                 C++ Dialect Options.
                                                              (line 1204)
 * Wno-delete-non-virtual-dtor:           C++ Dialect Options.
                                                              (line  605)
-* Wno-deprecated:                        Warning Options.    (line 2900)
+* Wno-deprecated:                        Warning Options.    (line 2903)
 * Wno-deprecated-copy:                   C++ Dialect Options.
                                                              (line  612)
-* Wno-deprecated-declarations:           Warning Options.    (line 2904)
+* Wno-deprecated-declarations:           Warning Options.    (line 2907)
 * Wno-deprecated-enum-enum-conversion:   C++ Dialect Options.
                                                              (line  620)
 * Wno-deprecated-enum-float-conversion:  C++ Dialect Options.
                                                              (line  634)
-* Wno-designated-init:                   Warning Options.    (line 3231)
-* Wno-disabled-optimization:             Warning Options.    (line 3182)
-* Wno-discarded-array-qualifiers:        Warning Options.    (line 1922)
-* Wno-discarded-qualifiers:              Warning Options.    (line 1916)
-* Wno-div-by-zero:                       Warning Options.    (line 1963)
+* Wno-designated-init:                   Warning Options.    (line 3234)
+* Wno-disabled-optimization:             Warning Options.    (line 3185)
+* Wno-discarded-array-qualifiers:        Warning Options.    (line 1925)
+* Wno-discarded-qualifiers:              Warning Options.    (line 1919)
+* Wno-div-by-zero:                       Warning Options.    (line 1966)
 * Wno-double-promotion:                  Warning Options.    (line  404)
 * Wno-duplicate-decl-specifier:          Warning Options.    (line  422)
-* Wno-duplicated-branches:               Warning Options.    (line 1893)
-* Wno-duplicated-cond:                   Warning Options.    (line 1904)
+* Wno-duplicated-branches:               Warning Options.    (line 1896)
+* Wno-duplicated-cond:                   Warning Options.    (line 1907)
 * Wno-effc++:                            C++ Dialect Options.
                                                              (line  917)
-* Wno-empty-body:                        Warning Options.    (line 2548)
-* Wno-endif-labels:                      Warning Options.    (line 2341)
-* Wno-endif-labels <1>:                  Warning Options.    (line 2552)
-* Wno-enum-compare:                      Warning Options.    (line 2555)
-* Wno-enum-conversion:                   Warning Options.    (line 2561)
+* Wno-empty-body:                        Warning Options.    (line 2551)
+* Wno-endif-labels:                      Warning Options.    (line 2344)
+* Wno-endif-labels <1>:                  Warning Options.    (line 2555)
+* Wno-enum-compare:                      Warning Options.    (line 2558)
+* Wno-enum-conversion:                   Warning Options.    (line 2564)
 * Wno-error:                             Warning Options.    (line   28)
 * Wno-error=:                            Warning Options.    (line   31)
 * Wno-exceptions:                        C++ Dialect Options.
                                                              (line  945)
 * Wno-extra:                             Warning Options.    (line  217)
-* Wno-extra <1>:                         Warning Options.    (line 2797)
-* Wno-extra <2>:                         Warning Options.    (line 2926)
+* Wno-extra <1>:                         Warning Options.    (line 2800)
+* Wno-extra <2>:                         Warning Options.    (line 2929)
 * Wno-extra-semi:                        C++ Dialect Options.
                                                              (line 1209)
 * Wno-fatal-errors:                      Warning Options.    (line   48)
-* Wno-float-conversion:                  Warning Options.    (line 2589)
-* Wno-float-equal:                       Warning Options.    (line 2003)
+* Wno-float-conversion:                  Warning Options.    (line 2592)
+* Wno-float-equal:                       Warning Options.    (line 2006)
 * Wno-format:                            Warning Options.    (line  427)
-* Wno-format <1>:                        Warning Options.    (line 1646)
+* Wno-format <1>:                        Warning Options.    (line 1649)
 * Wno-format-contains-nul:               Warning Options.    (line  466)
 * Wno-format-extra-args:                 Warning Options.    (line  470)
 * Wno-format-nonliteral:                 Warning Options.    (line  563)
@@ -66016,10 +66019,10 @@ look up both forms.
 * Wno-format-truncation <1>:             Warning Options.    (line  596)
 * Wno-format-y2k:                        Warning Options.    (line  607)
 * Wno-format-zero-length:                Warning Options.    (line  559)
-* Wno-frame-address:                     Warning Options.    (line 1910)
-* Wno-frame-larger-than:                 Warning Options.    (line 2177)
-* Wno-frame-larger-than <1>:             Warning Options.    (line 2190)
-* Wno-free-nonheap-object:               Warning Options.    (line 2194)
+* Wno-frame-address:                     Warning Options.    (line 1913)
+* Wno-frame-larger-than:                 Warning Options.    (line 2180)
+* Wno-frame-larger-than <1>:             Warning Options.    (line 2193)
+* Wno-free-nonheap-object:               Warning Options.    (line 2197)
 * Wno-if-not-aligned:                    Warning Options.    (line  780)
 * Wno-ignored-attributes:                Warning Options.    (line  795)
 * Wno-ignored-qualifiers:                Warning Options.    (line  784)
@@ -66029,61 +66032,61 @@ look up both forms.
 * Wno-implicit-int:                      Warning Options.    (line  647)
 * Wno-inaccessible-base:                 C++ Dialect Options.
                                                              (line 1213)
-* Wno-incompatible-pointer-types:        Warning Options.    (line 1928)
+* Wno-incompatible-pointer-types:        Warning Options.    (line 1931)
 * Wno-inherited-variadic-ctor:           C++ Dialect Options.
                                                              (line 1224)
 * Wno-init-list-lifetime:                C++ Dialect Options.
                                                              (line  648)
 * Wno-init-self:                         Warning Options.    (line  632)
-* Wno-inline:                            Warning Options.    (line 3019)
-* Wno-int-conversion:                    Warning Options.    (line 1934)
-* Wno-int-in-bool-context:               Warning Options.    (line 3067)
-* Wno-int-to-pointer-cast:               Warning Options.    (line 3075)
+* Wno-inline:                            Warning Options.    (line 3022)
+* Wno-int-conversion:                    Warning Options.    (line 1937)
+* Wno-int-in-bool-context:               Warning Options.    (line 3070)
+* Wno-int-to-pointer-cast:               Warning Options.    (line 3078)
 * Wno-invalid-imported-macros:           C++ Dialect Options.
                                                              (line  683)
-* Wno-invalid-memory-model:              Warning Options.    (line 1290)
+* Wno-invalid-memory-model:              Warning Options.    (line 1293)
 * Wno-invalid-offsetof:                  C++ Dialect Options.
                                                              (line 1229)
-* Wno-invalid-pch:                       Warning Options.    (line 3084)
-* Wno-jump-misses-init:                  Warning Options.    (line 2566)
-* Wno-larger-than:                       Warning Options.    (line 2173)
+* Wno-invalid-pch:                       Warning Options.    (line 3087)
+* Wno-jump-misses-init:                  Warning Options.    (line 2569)
+* Wno-larger-than:                       Warning Options.    (line 2176)
 * Wno-literal-suffix:                    C++ Dialect Options.
                                                              (line  689)
-* Wno-logical-not-parentheses:           Warning Options.    (line 2693)
-* Wno-logical-op:                        Warning Options.    (line 2685)
-* Wno-long-long:                         Warning Options.    (line 3088)
-* Wno-lto-type-mismatch:                 Warning Options.    (line 3225)
+* Wno-logical-not-parentheses:           Warning Options.    (line 2696)
+* Wno-logical-op:                        Warning Options.    (line 2688)
+* Wno-long-long:                         Warning Options.    (line 3091)
+* Wno-lto-type-mismatch:                 Warning Options.    (line 3228)
 * Wno-main:                              Warning Options.    (line  802)
-* Wno-maybe-uninitialized:               Warning Options.    (line 1307)
-* Wno-memset-elt-size:                   Warning Options.    (line 2648)
-* Wno-memset-transposed-args:            Warning Options.    (line 2656)
+* Wno-maybe-uninitialized:               Warning Options.    (line 1310)
+* Wno-memset-elt-size:                   Warning Options.    (line 2651)
+* Wno-memset-transposed-args:            Warning Options.    (line 2659)
 * Wno-misleading-indentation:            Warning Options.    (line  809)
-* Wno-mismatched-dealloc:                Warning Options.    (line  916)
+* Wno-mismatched-dealloc:                Warning Options.    (line  919)
 * Wno-mismatched-new-delete:             C++ Dialect Options.
                                                              (line 1008)
 * Wno-mismatched-tags:                   C++ Dialect Options.
                                                              (line 1039)
 * Wno-missing-attributes:                Warning Options.    (line  843)
 * Wno-missing-braces:                    Warning Options.    (line  887)
-* Wno-missing-declarations:              Warning Options.    (line 2787)
-* Wno-missing-field-initializers:        Warning Options.    (line 2797)
-* Wno-missing-format-attribute:          Warning Options.    (line 1646)
+* Wno-missing-declarations:              Warning Options.    (line 2790)
+* Wno-missing-field-initializers:        Warning Options.    (line 2800)
+* Wno-missing-format-attribute:          Warning Options.    (line 1649)
 * Wno-missing-include-dirs:              Warning Options.    (line  897)
-* Wno-missing-noreturn:                  Warning Options.    (line 1632)
-* Wno-missing-parameter-type:            Warning Options.    (line 2769)
-* Wno-missing-profile:                   Warning Options.    (line  900)
-* Wno-missing-prototypes:                Warning Options.    (line 2777)
-* Wno-missing-requires:                  Warning Options.    (line 2827)
+* Wno-missing-noreturn:                  Warning Options.    (line 1635)
+* Wno-missing-parameter-type:            Warning Options.    (line 2772)
+* Wno-missing-profile:                   Warning Options.    (line  903)
+* Wno-missing-prototypes:                Warning Options.    (line 2780)
+* Wno-missing-requires:                  Warning Options.    (line 2830)
 * Wno-misspelled-isr:                    AVR Options.        (line  313)
-* Wno-multichar:                         Warning Options.    (line 2844)
+* Wno-multichar:                         Warning Options.    (line 2847)
 * Wno-multiple-inheritance:              C++ Dialect Options.
                                                              (line 1064)
-* Wno-multistatement-macros:             Warning Options.    (line  947)
+* Wno-multistatement-macros:             Warning Options.    (line  950)
 * Wno-namespaces:                        C++ Dialect Options.
                                                              (line 1087)
 * Wno-narrowing:                         C++ Dialect Options.
                                                              (line  715)
-* Wno-nested-externs:                    Warning Options.    (line 3016)
+* Wno-nested-externs:                    Warning Options.    (line 3019)
 * Wno-noexcept:                          C++ Dialect Options.
                                                              (line  731)
 * Wno-noexcept-type:                     C++ Dialect Options.
@@ -66094,28 +66097,28 @@ look up both forms.
                                                              (line  771)
 * Wno-nonnull:                           Warning Options.    (line  611)
 * Wno-nonnull-compare:                   Warning Options.    (line  618)
-* Wno-normalized:                        Warning Options.    (line 2850)
+* Wno-normalized:                        Warning Options.    (line 2853)
 * Wno-null-dereference:                  Warning Options.    (line  625)
-* Wno-odr:                               Warning Options.    (line 2913)
+* Wno-odr:                               Warning Options.    (line 2916)
 * Wno-old-style-cast:                    C++ Dialect Options.
                                                              (line  966)
-* Wno-old-style-declaration:             Warning Options.    (line 2756)
-* Wno-old-style-definition:              Warning Options.    (line 2762)
-* Wno-openacc-parallelism:               Warning Options.    (line 2917)
-* Wno-openmp-simd:                       Warning Options.    (line 2921)
-* Wno-overflow:                          Warning Options.    (line 2910)
-* Wno-overlength-strings:                Warning Options.    (line 3202)
+* Wno-old-style-declaration:             Warning Options.    (line 2759)
+* Wno-old-style-definition:              Warning Options.    (line 2765)
+* Wno-openacc-parallelism:               Warning Options.    (line 2920)
+* Wno-openmp-simd:                       Warning Options.    (line 2924)
+* Wno-overflow:                          Warning Options.    (line 2913)
+* Wno-overlength-strings:                Warning Options.    (line 3205)
 * Wno-overloaded-virtual:                C++ Dialect Options.
                                                              (line  972)
-* Wno-override-init:                     Warning Options.    (line 2926)
-* Wno-override-init-side-effects:        Warning Options.    (line 2934)
-* Wno-packed:                            Warning Options.    (line 2939)
-* Wno-packed-bitfield-compat:            Warning Options.    (line 2956)
-* Wno-packed-not-aligned:                Warning Options.    (line 2973)
-* Wno-padded:                            Warning Options.    (line 2986)
-* Wno-parentheses:                       Warning Options.    (line  967)
+* Wno-override-init:                     Warning Options.    (line 2929)
+* Wno-override-init-side-effects:        Warning Options.    (line 2937)
+* Wno-packed:                            Warning Options.    (line 2942)
+* Wno-packed-bitfield-compat:            Warning Options.    (line 2959)
+* Wno-packed-not-aligned:                Warning Options.    (line 2976)
+* Wno-padded:                            Warning Options.    (line 2989)
+* Wno-parentheses:                       Warning Options.    (line  970)
 * Wno-pedantic:                          Warning Options.    (line   86)
-* Wno-pedantic-ms-format:                Warning Options.    (line 2245)
+* Wno-pedantic-ms-format:                Warning Options.    (line 2248)
 * Wno-pessimizing-move:                  C++ Dialect Options.
                                                              (line  800)
 * Wno-placement-new:                     C++ Dialect Options.
@@ -66124,19 +66127,19 @@ look up both forms.
                                                              (line  991)
 * Wno-pmf-conversions <1>:               Bound member functions.
                                                              (line   35)
-* Wno-pointer-arith:                     Warning Options.    (line 2251)
-* Wno-pointer-compare:                   Warning Options.    (line 2258)
-* Wno-pointer-sign:                      Warning Options.    (line 3191)
-* Wno-pointer-to-int-cast:               Warning Options.    (line 3080)
-* Wno-pragmas:                           Warning Options.    (line 1367)
-* Wno-prio-ctor-dtor:                    Warning Options.    (line 1372)
+* Wno-pointer-arith:                     Warning Options.    (line 2254)
+* Wno-pointer-compare:                   Warning Options.    (line 2261)
+* Wno-pointer-sign:                      Warning Options.    (line 3194)
+* Wno-pointer-to-int-cast:               Warning Options.    (line 3083)
+* Wno-pragmas:                           Warning Options.    (line 1370)
+* Wno-prio-ctor-dtor:                    Warning Options.    (line 1375)
 * Wno-property-assign-default:           Objective-C and Objective-C++ Dialect Options.
                                                              (line  174)
 * Wno-protocol:                          Objective-C and Objective-C++ Dialect Options.
                                                              (line  178)
 * Wno-range-loop-construct:              C++ Dialect Options.
                                                              (line  861)
-* Wno-redundant-decls:                   Warning Options.    (line 2993)
+* Wno-redundant-decls:                   Warning Options.    (line 2996)
 * Wno-redundant-move:                    C++ Dialect Options.
                                                              (line  822)
 * Wno-redundant-tags:                    C++ Dialect Options.
@@ -66145,114 +66148,114 @@ look up both forms.
                                                              (line  779)
 * Wno-reorder:                           C++ Dialect Options.
                                                              (line  786)
-* Wno-restrict:                          Warning Options.    (line 2997)
-* Wno-return-local-addr:                 Warning Options.    (line 1047)
-* Wno-return-type:                       Warning Options.    (line 1051)
-* Wno-scalar-storage-order:              Warning Options.    (line 2595)
+* Wno-restrict:                          Warning Options.    (line 3000)
+* Wno-return-local-addr:                 Warning Options.    (line 1050)
+* Wno-return-type:                       Warning Options.    (line 1054)
+* Wno-scalar-storage-order:              Warning Options.    (line 2598)
 * Wno-selector:                          Objective-C and Objective-C++ Dialect Options.
                                                              (line  195)
-* Wno-sequence-point:                    Warning Options.    (line  994)
-* Wno-shadow:                            Warning Options.    (line 2109)
-* Wno-shadow-ivar:                       Warning Options.    (line 2120)
-* Wno-shift-count-negative:              Warning Options.    (line 1072)
-* Wno-shift-count-overflow:              Warning Options.    (line 1076)
-* Wno-shift-negative-value:              Warning Options.    (line 1080)
-* Wno-shift-overflow:                    Warning Options.    (line 1085)
-* Wno-sign-compare:                      Warning Options.    (line 2577)
-* Wno-sign-conversion:                   Warning Options.    (line 2583)
+* Wno-sequence-point:                    Warning Options.    (line  997)
+* Wno-shadow:                            Warning Options.    (line 2112)
+* Wno-shadow-ivar:                       Warning Options.    (line 2123)
+* Wno-shift-count-negative:              Warning Options.    (line 1075)
+* Wno-shift-count-overflow:              Warning Options.    (line 1079)
+* Wno-shift-negative-value:              Warning Options.    (line 1083)
+* Wno-shift-overflow:                    Warning Options.    (line 1088)
+* Wno-sign-compare:                      Warning Options.    (line 2580)
+* Wno-sign-conversion:                   Warning Options.    (line 2586)
 * Wno-sign-promo:                        C++ Dialect Options.
                                                              (line  995)
 * Wno-sized-deallocation:                C++ Dialect Options.
                                                              (line 1241)
-* Wno-sizeof-array-argument:             Warning Options.    (line 2643)
-* Wno-sizeof-array-div:                  Warning Options.    (line 2599)
-* Wno-sizeof-pointer-div:                Warning Options.    (line 2613)
-* Wno-sizeof-pointer-memaccess:          Warning Options.    (line 2621)
-* Wno-stack-protector:                   Warning Options.    (line 3197)
-* Wno-stack-usage:                       Warning Options.    (line 2211)
-* Wno-stack-usage <1>:                   Warning Options.    (line 2235)
-* Wno-strict-aliasing:                   Warning Options.    (line 1380)
+* Wno-sizeof-array-argument:             Warning Options.    (line 2646)
+* Wno-sizeof-array-div:                  Warning Options.    (line 2602)
+* Wno-sizeof-pointer-div:                Warning Options.    (line 2616)
+* Wno-sizeof-pointer-memaccess:          Warning Options.    (line 2624)
+* Wno-stack-protector:                   Warning Options.    (line 3200)
+* Wno-stack-usage:                       Warning Options.    (line 2214)
+* Wno-stack-usage <1>:                   Warning Options.    (line 2238)
+* Wno-strict-aliasing:                   Warning Options.    (line 1383)
 * Wno-strict-null-sentinel:              C++ Dialect Options.
                                                              (line  950)
-* Wno-strict-overflow:                   Warning Options.    (line 1419)
-* Wno-strict-prototypes:                 Warning Options.    (line 2750)
+* Wno-strict-overflow:                   Warning Options.    (line 1422)
+* Wno-strict-prototypes:                 Warning Options.    (line 2753)
 * Wno-strict-selector-match:             Objective-C and Objective-C++ Dialect Options.
                                                              (line  207)
-* Wno-string-compare:                    Warning Options.    (line 1467)
-* Wno-stringop-overflow:                 Warning Options.    (line 1489)
-* Wno-stringop-overflow <1>:             Warning Options.    (line 1528)
-* Wno-stringop-overread:                 Warning Options.    (line 1566)
-* Wno-stringop-truncation:               Warning Options.    (line 1573)
+* Wno-string-compare:                    Warning Options.    (line 1470)
+* Wno-stringop-overflow:                 Warning Options.    (line 1492)
+* Wno-stringop-overflow <1>:             Warning Options.    (line 1531)
+* Wno-stringop-overread:                 Warning Options.    (line 1569)
+* Wno-stringop-truncation:               Warning Options.    (line 1576)
 * Wno-subobject-linkage:                 C++ Dialect Options.
                                                              (line  904)
-* Wno-suggest-attribute=:                Warning Options.    (line 1624)
-* Wno-suggest-attribute=cold:            Warning Options.    (line 1667)
-* Wno-suggest-attribute=const:           Warning Options.    (line 1632)
-* Wno-suggest-attribute=format:          Warning Options.    (line 1646)
-* Wno-suggest-attribute=malloc:          Warning Options.    (line 1632)
-* Wno-suggest-attribute=noreturn:        Warning Options.    (line 1632)
-* Wno-suggest-attribute=pure:            Warning Options.    (line 1632)
+* Wno-suggest-attribute=:                Warning Options.    (line 1627)
+* Wno-suggest-attribute=cold:            Warning Options.    (line 1670)
+* Wno-suggest-attribute=const:           Warning Options.    (line 1635)
+* Wno-suggest-attribute=format:          Warning Options.    (line 1649)
+* Wno-suggest-attribute=malloc:          Warning Options.    (line 1635)
+* Wno-suggest-attribute=noreturn:        Warning Options.    (line 1635)
+* Wno-suggest-attribute=pure:            Warning Options.    (line 1635)
 * Wno-suggest-final-methods:             C++ Dialect Options.
                                                              (line 1261)
 * Wno-suggest-final-types:               C++ Dialect Options.
                                                              (line 1252)
 * Wno-suggest-override:                  C++ Dialect Options.
                                                              (line 1271)
-* Wno-switch:                            Warning Options.    (line 1101)
-* Wno-switch-bool:                       Warning Options.    (line 1121)
-* Wno-switch-default:                    Warning Options.    (line 1109)
-* Wno-switch-enum:                       Warning Options.    (line 1112)
-* Wno-switch-outside-range:              Warning Options.    (line 1132)
-* Wno-switch-unreachable:                Warning Options.    (line 1137)
-* Wno-sync-nand:                         Warning Options.    (line 1161)
-* Wno-system-headers:                    Warning Options.    (line 1968)
-* Wno-tautological-compare:              Warning Options.    (line 1979)
+* Wno-switch:                            Warning Options.    (line 1104)
+* Wno-switch-bool:                       Warning Options.    (line 1124)
+* Wno-switch-default:                    Warning Options.    (line 1112)
+* Wno-switch-enum:                       Warning Options.    (line 1115)
+* Wno-switch-outside-range:              Warning Options.    (line 1135)
+* Wno-switch-unreachable:                Warning Options.    (line 1140)
+* Wno-sync-nand:                         Warning Options.    (line 1164)
+* Wno-system-headers:                    Warning Options.    (line 1971)
+* Wno-tautological-compare:              Warning Options.    (line 1982)
 * Wno-templates:                         C++ Dialect Options.
                                                              (line 1001)
 * Wno-terminate:                         C++ Dialect Options.
                                                              (line 1094)
-* Wno-traditional:                       Warning Options.    (line 2018)
-* Wno-traditional-conversion:            Warning Options.    (line 2095)
-* Wno-trampolines:                       Warning Options.    (line 1993)
-* Wno-tsan:                              Warning Options.    (line 2271)
-* Wno-type-limits:                       Warning Options.    (line 2279)
+* Wno-traditional:                       Warning Options.    (line 2021)
+* Wno-traditional-conversion:            Warning Options.    (line 2098)
+* Wno-trampolines:                       Warning Options.    (line 1996)
+* Wno-tsan:                              Warning Options.    (line 2274)
+* Wno-type-limits:                       Warning Options.    (line 2282)
 * Wno-undeclared-selector:               Objective-C and Objective-C++ Dialect Options.
                                                              (line  215)
-* Wno-undef:                             Warning Options.    (line 2312)
-* Wno-uninitialized:                     Warning Options.    (line 1262)
-* Wno-unknown-pragmas:                   Warning Options.    (line 1360)
-* Wno-unsafe-loop-optimizations:         Warning Options.    (line 2239)
-* Wno-unsuffixed-float-constants:        Warning Options.    (line 3217)
-* Wno-unused:                            Warning Options.    (line 1255)
-* Wno-unused-but-set-parameter:          Warning Options.    (line 1166)
-* Wno-unused-but-set-variable:           Warning Options.    (line 1175)
-* Wno-unused-const-variable:             Warning Options.    (line 1222)
-* Wno-unused-function:                   Warning Options.    (line 1185)
-* Wno-unused-label:                      Warning Options.    (line 1190)
-* Wno-unused-local-typedefs:             Warning Options.    (line 1197)
-* Wno-unused-parameter:                  Warning Options.    (line 1201)
-* Wno-unused-result:                     Warning Options.    (line 1208)
-* Wno-unused-value:                      Warning Options.    (line 1245)
-* Wno-unused-variable:                   Warning Options.    (line 1213)
+* Wno-undef:                             Warning Options.    (line 2315)
+* Wno-uninitialized:                     Warning Options.    (line 1265)
+* Wno-unknown-pragmas:                   Warning Options.    (line 1363)
+* Wno-unsafe-loop-optimizations:         Warning Options.    (line 2242)
+* Wno-unsuffixed-float-constants:        Warning Options.    (line 3220)
+* Wno-unused:                            Warning Options.    (line 1258)
+* Wno-unused-but-set-parameter:          Warning Options.    (line 1169)
+* Wno-unused-but-set-variable:           Warning Options.    (line 1178)
+* Wno-unused-const-variable:             Warning Options.    (line 1225)
+* Wno-unused-function:                   Warning Options.    (line 1188)
+* Wno-unused-label:                      Warning Options.    (line 1193)
+* Wno-unused-local-typedefs:             Warning Options.    (line 1200)
+* Wno-unused-parameter:                  Warning Options.    (line 1204)
+* Wno-unused-result:                     Warning Options.    (line 1211)
+* Wno-unused-value:                      Warning Options.    (line 1248)
+* Wno-unused-variable:                   Warning Options.    (line 1216)
 * Wno-useless-cast:                      C++ Dialect Options.
                                                              (line 1275)
-* Wno-varargs:                           Warning Options.    (line 3099)
-* Wno-variadic-macros:                   Warning Options.    (line 3093)
-* Wno-vector-operation-performance:      Warning Options.    (line 3104)
+* Wno-varargs:                           Warning Options.    (line 3102)
+* Wno-variadic-macros:                   Warning Options.    (line 3096)
+* Wno-vector-operation-performance:      Warning Options.    (line 3107)
 * Wno-vexing-parse:                      C++ Dialect Options.
                                                              (line 1098)
 * Wno-virtual-inheritance:               C++ Dialect Options.
                                                              (line 1071)
 * Wno-virtual-move-assign:               C++ Dialect Options.
                                                              (line 1078)
-* Wno-vla:                               Warning Options.    (line 3114)
-* Wno-vla-larger-than:                   Warning Options.    (line 3118)
-* Wno-vla-larger-than <1>:               Warning Options.    (line 3135)
-* Wno-vla-parameter:                     Warning Options.    (line 3139)
+* Wno-vla:                               Warning Options.    (line 3117)
+* Wno-vla-larger-than:                   Warning Options.    (line 3121)
+* Wno-vla-larger-than <1>:               Warning Options.    (line 3138)
+* Wno-vla-parameter:                     Warning Options.    (line 3142)
 * Wno-volatile:                          C++ Dialect Options.
                                                              (line 1129)
-* Wno-volatile-register-var:             Warning Options.    (line 3176)
-* Wno-write-strings:                     Warning Options.    (line 2471)
+* Wno-volatile-register-var:             Warning Options.    (line 3179)
+* Wno-write-strings:                     Warning Options.    (line 2474)
 * Wno-zero-as-null-pointer-constant:     C++ Dialect Options.
                                                              (line 1142)
 * Wnoexcept:                             C++ Dialect Options.
@@ -66265,46 +66268,46 @@ look up both forms.
                                                              (line  771)
 * Wnonnull:                              Warning Options.    (line  611)
 * Wnonnull-compare:                      Warning Options.    (line  618)
-* Wnormalized:                           Warning Options.    (line 2850)
-* Wnormalized=:                          Warning Options.    (line 2850)
+* Wnormalized:                           Warning Options.    (line 2853)
+* Wnormalized=:                          Warning Options.    (line 2853)
 * Wnull-dereference:                     Warning Options.    (line  625)
 * Wobjc-root-class:                      Objective-C and Objective-C++ Dialect Options.
                                                              (line  188)
-* Wodr:                                  Warning Options.    (line 2913)
+* Wodr:                                  Warning Options.    (line 2916)
 * Wold-style-cast:                       C++ Dialect Options.
                                                              (line  966)
-* Wold-style-declaration:                Warning Options.    (line 2756)
-* Wold-style-definition:                 Warning Options.    (line 2762)
-* Wopenacc-parallelism:                  Warning Options.    (line 2917)
-* Wopenmp-simd:                          Warning Options.    (line 2921)
-* Woverflow:                             Warning Options.    (line 2910)
-* Woverlength-strings:                   Warning Options.    (line 3202)
+* Wold-style-declaration:                Warning Options.    (line 2759)
+* Wold-style-definition:                 Warning Options.    (line 2765)
+* Wopenacc-parallelism:                  Warning Options.    (line 2920)
+* Wopenmp-simd:                          Warning Options.    (line 2924)
+* Woverflow:                             Warning Options.    (line 2913)
+* Woverlength-strings:                   Warning Options.    (line 3205)
 * Woverloaded-virtual:                   C++ Dialect Options.
                                                              (line  972)
-* Woverride-init:                        Warning Options.    (line 2926)
-* Woverride-init-side-effects:           Warning Options.    (line 2934)
+* Woverride-init:                        Warning Options.    (line 2929)
+* Woverride-init-side-effects:           Warning Options.    (line 2937)
 * Wp:                                    Preprocessor Options.
                                                              (line  463)
-* Wpacked:                               Warning Options.    (line 2939)
-* Wpacked-bitfield-compat:               Warning Options.    (line 2956)
-* Wpacked-not-aligned:                   Warning Options.    (line 2973)
-* Wpadded:                               Warning Options.    (line 2986)
-* Wparentheses:                          Warning Options.    (line  967)
+* Wpacked:                               Warning Options.    (line 2942)
+* Wpacked-bitfield-compat:               Warning Options.    (line 2959)
+* Wpacked-not-aligned:                   Warning Options.    (line 2976)
+* Wpadded:                               Warning Options.    (line 2989)
+* Wparentheses:                          Warning Options.    (line  970)
 * Wpedantic:                             Warning Options.    (line   86)
-* Wpedantic-ms-format:                   Warning Options.    (line 2245)
+* Wpedantic-ms-format:                   Warning Options.    (line 2248)
 * Wpessimizing-move:                     C++ Dialect Options.
                                                              (line  800)
 * Wplacement-new:                        C++ Dialect Options.
                                                              (line 1157)
 * Wpmf-conversions:                      C++ Dialect Options.
                                                              (line  991)
-* Wpointer-arith:                        Warning Options.    (line 2251)
+* Wpointer-arith:                        Warning Options.    (line 2254)
 * Wpointer-arith <1>:                    Pointer Arith.      (line   13)
-* Wpointer-compare:                      Warning Options.    (line 2258)
-* Wpointer-sign:                         Warning Options.    (line 3191)
-* Wpointer-to-int-cast:                  Warning Options.    (line 3080)
-* Wpragmas:                              Warning Options.    (line 1367)
-* Wprio-ctor-dtor:                       Warning Options.    (line 1372)
+* Wpointer-compare:                      Warning Options.    (line 2261)
+* Wpointer-sign:                         Warning Options.    (line 3194)
+* Wpointer-to-int-cast:                  Warning Options.    (line 3083)
+* Wpragmas:                              Warning Options.    (line 1370)
+* Wprio-ctor-dtor:                       Warning Options.    (line 1375)
 * Wproperty-assign-default:              Objective-C and Objective-C++ Dialect Options.
                                                              (line  174)
 * Wprotocol:                             Objective-C and Objective-C++ Dialect Options.
@@ -66312,7 +66315,7 @@ look up both forms.
 * Wrange-loop-construct:                 C++ Dialect Options.
                                                              (line  861)
 * wrapper:                               Overall Options.    (line  619)
-* Wredundant-decls:                      Warning Options.    (line 2993)
+* Wredundant-decls:                      Warning Options.    (line 2996)
 * Wredundant-move:                       C++ Dialect Options.
                                                              (line  822)
 * Wredundant-tags:                       C++ Dialect Options.
@@ -66321,121 +66324,121 @@ look up both forms.
                                                              (line  779)
 * Wreorder:                              C++ Dialect Options.
                                                              (line  786)
-* Wrestrict:                             Warning Options.    (line 2997)
-* Wreturn-local-addr:                    Warning Options.    (line 1047)
-* Wreturn-type:                          Warning Options.    (line 1051)
-* Wscalar-storage-order:                 Warning Options.    (line 2595)
+* Wrestrict:                             Warning Options.    (line 3000)
+* Wreturn-local-addr:                    Warning Options.    (line 1050)
+* Wreturn-type:                          Warning Options.    (line 1054)
+* Wscalar-storage-order:                 Warning Options.    (line 2598)
 * Wselector:                             Objective-C and Objective-C++ Dialect Options.
                                                              (line  195)
-* Wsequence-point:                       Warning Options.    (line  994)
-* Wshadow:                               Warning Options.    (line 2109)
-* Wshadow-ivar:                          Warning Options.    (line 2120)
-* Wshadow=compatible-local:              Warning Options.    (line 2131)
-* Wshadow=global:                        Warning Options.    (line 2124)
-* Wshadow=local:                         Warning Options.    (line 2127)
-* Wshift-count-negative:                 Warning Options.    (line 1072)
-* Wshift-count-overflow:                 Warning Options.    (line 1076)
-* Wshift-negative-value:                 Warning Options.    (line 1080)
-* Wshift-overflow:                       Warning Options.    (line 1085)
-* Wsign-compare:                         Warning Options.    (line 2577)
-* Wsign-conversion:                      Warning Options.    (line 2583)
+* Wsequence-point:                       Warning Options.    (line  997)
+* Wshadow:                               Warning Options.    (line 2112)
+* Wshadow-ivar:                          Warning Options.    (line 2123)
+* Wshadow=compatible-local:              Warning Options.    (line 2134)
+* Wshadow=global:                        Warning Options.    (line 2127)
+* Wshadow=local:                         Warning Options.    (line 2130)
+* Wshift-count-negative:                 Warning Options.    (line 1075)
+* Wshift-count-overflow:                 Warning Options.    (line 1079)
+* Wshift-negative-value:                 Warning Options.    (line 1083)
+* Wshift-overflow:                       Warning Options.    (line 1088)
+* Wsign-compare:                         Warning Options.    (line 2580)
+* Wsign-conversion:                      Warning Options.    (line 2586)
 * Wsign-promo:                           C++ Dialect Options.
                                                              (line  995)
 * Wsized-deallocation:                   C++ Dialect Options.
                                                              (line 1241)
-* Wsizeof-array-argument:                Warning Options.    (line 2643)
-* Wsizeof-array-div:                     Warning Options.    (line 2599)
-* Wsizeof-pointer-div:                   Warning Options.    (line 2613)
-* Wsizeof-pointer-memaccess:             Warning Options.    (line 2621)
-* Wstack-protector:                      Warning Options.    (line 3197)
-* Wstack-usage:                          Warning Options.    (line 2211)
-* Wstrict-aliasing:                      Warning Options.    (line 1380)
-* Wstrict-aliasing=n:                    Warning Options.    (line 1387)
+* Wsizeof-array-argument:                Warning Options.    (line 2646)
+* Wsizeof-array-div:                     Warning Options.    (line 2602)
+* Wsizeof-pointer-div:                   Warning Options.    (line 2616)
+* Wsizeof-pointer-memaccess:             Warning Options.    (line 2624)
+* Wstack-protector:                      Warning Options.    (line 3200)
+* Wstack-usage:                          Warning Options.    (line 2214)
+* Wstrict-aliasing:                      Warning Options.    (line 1383)
+* Wstrict-aliasing=n:                    Warning Options.    (line 1390)
 * Wstrict-null-sentinel:                 C++ Dialect Options.
                                                              (line  950)
-* Wstrict-overflow:                      Warning Options.    (line 1419)
-* Wstrict-prototypes:                    Warning Options.    (line 2750)
+* Wstrict-overflow:                      Warning Options.    (line 1422)
+* Wstrict-prototypes:                    Warning Options.    (line 2753)
 * Wstrict-selector-match:                Objective-C and Objective-C++ Dialect Options.
                                                              (line  207)
-* Wstring-compare:                       Warning Options.    (line 1467)
-* Wstringop-overflow:                    Warning Options.    (line 1489)
-* Wstringop-overflow <1>:                Warning Options.    (line 1528)
-* Wstringop-overread:                    Warning Options.    (line 1566)
-* Wstringop-truncation:                  Warning Options.    (line 1573)
+* Wstring-compare:                       Warning Options.    (line 1470)
+* Wstringop-overflow:                    Warning Options.    (line 1492)
+* Wstringop-overflow <1>:                Warning Options.    (line 1531)
+* Wstringop-overread:                    Warning Options.    (line 1569)
+* Wstringop-truncation:                  Warning Options.    (line 1576)
 * Wsubobject-linkage:                    C++ Dialect Options.
                                                              (line  904)
-* Wsuggest-attribute=:                   Warning Options.    (line 1624)
-* Wsuggest-attribute=cold:               Warning Options.    (line 1667)
-* Wsuggest-attribute=const:              Warning Options.    (line 1632)
-* Wsuggest-attribute=format:             Warning Options.    (line 1646)
-* Wsuggest-attribute=malloc:             Warning Options.    (line 1632)
-* Wsuggest-attribute=noreturn:           Warning Options.    (line 1632)
-* Wsuggest-attribute=pure:               Warning Options.    (line 1632)
+* Wsuggest-attribute=:                   Warning Options.    (line 1627)
+* Wsuggest-attribute=cold:               Warning Options.    (line 1670)
+* Wsuggest-attribute=const:              Warning Options.    (line 1635)
+* Wsuggest-attribute=format:             Warning Options.    (line 1649)
+* Wsuggest-attribute=malloc:             Warning Options.    (line 1635)
+* Wsuggest-attribute=noreturn:           Warning Options.    (line 1635)
+* Wsuggest-attribute=pure:               Warning Options.    (line 1635)
 * Wsuggest-final-methods:                C++ Dialect Options.
                                                              (line 1261)
 * Wsuggest-final-types:                  C++ Dialect Options.
                                                              (line 1252)
 * Wsuggest-override:                     C++ Dialect Options.
                                                              (line 1271)
-* Wswitch:                               Warning Options.    (line 1101)
-* Wswitch-bool:                          Warning Options.    (line 1121)
-* Wswitch-default:                       Warning Options.    (line 1109)
-* Wswitch-enum:                          Warning Options.    (line 1112)
-* Wswitch-outside-range:                 Warning Options.    (line 1132)
-* Wswitch-unreachable:                   Warning Options.    (line 1137)
-* Wsync-nand:                            Warning Options.    (line 1161)
-* Wsystem-headers:                       Warning Options.    (line 1968)
-* Wtautological-compare:                 Warning Options.    (line 1979)
+* Wswitch:                               Warning Options.    (line 1104)
+* Wswitch-bool:                          Warning Options.    (line 1124)
+* Wswitch-default:                       Warning Options.    (line 1112)
+* Wswitch-enum:                          Warning Options.    (line 1115)
+* Wswitch-outside-range:                 Warning Options.    (line 1135)
+* Wswitch-unreachable:                   Warning Options.    (line 1140)
+* Wsync-nand:                            Warning Options.    (line 1164)
+* Wsystem-headers:                       Warning Options.    (line 1971)
+* Wtautological-compare:                 Warning Options.    (line 1982)
 * Wtemplates:                            C++ Dialect Options.
                                                              (line 1001)
 * Wterminate:                            C++ Dialect Options.
                                                              (line 1094)
-* Wtraditional:                          Warning Options.    (line 2018)
-* Wtraditional-conversion:               Warning Options.    (line 2095)
-* Wtrampolines:                          Warning Options.    (line 1993)
-* Wtrigraphs:                            Warning Options.    (line 2302)
-* Wtsan:                                 Warning Options.    (line 2271)
-* Wtype-limits:                          Warning Options.    (line 2279)
+* Wtraditional:                          Warning Options.    (line 2021)
+* Wtraditional-conversion:               Warning Options.    (line 2098)
+* Wtrampolines:                          Warning Options.    (line 1996)
+* Wtrigraphs:                            Warning Options.    (line 2305)
+* Wtsan:                                 Warning Options.    (line 2274)
+* Wtype-limits:                          Warning Options.    (line 2282)
 * Wundeclared-selector:                  Objective-C and Objective-C++ Dialect Options.
                                                              (line  215)
-* Wundef:                                Warning Options.    (line 2312)
-* Wuninitialized:                        Warning Options.    (line 1262)
-* Wunknown-pragmas:                      Warning Options.    (line 1360)
-* Wunsafe-loop-optimizations:            Warning Options.    (line 2239)
-* Wunsuffixed-float-constants:           Warning Options.    (line 3217)
-* Wunused:                               Warning Options.    (line 1255)
-* Wunused-but-set-parameter:             Warning Options.    (line 1166)
-* Wunused-but-set-variable:              Warning Options.    (line 1175)
-* Wunused-const-variable:                Warning Options.    (line 1222)
-* Wunused-function:                      Warning Options.    (line 1185)
-* Wunused-label:                         Warning Options.    (line 1190)
-* Wunused-local-typedefs:                Warning Options.    (line 1197)
-* Wunused-macros:                        Warning Options.    (line 2322)
-* Wunused-parameter:                     Warning Options.    (line 1201)
-* Wunused-result:                        Warning Options.    (line 1208)
-* Wunused-value:                         Warning Options.    (line 1245)
-* Wunused-variable:                      Warning Options.    (line 1213)
+* Wundef:                                Warning Options.    (line 2315)
+* Wuninitialized:                        Warning Options.    (line 1265)
+* Wunknown-pragmas:                      Warning Options.    (line 1363)
+* Wunsafe-loop-optimizations:            Warning Options.    (line 2242)
+* Wunsuffixed-float-constants:           Warning Options.    (line 3220)
+* Wunused:                               Warning Options.    (line 1258)
+* Wunused-but-set-parameter:             Warning Options.    (line 1169)
+* Wunused-but-set-variable:              Warning Options.    (line 1178)
+* Wunused-const-variable:                Warning Options.    (line 1225)
+* Wunused-function:                      Warning Options.    (line 1188)
+* Wunused-label:                         Warning Options.    (line 1193)
+* Wunused-local-typedefs:                Warning Options.    (line 1200)
+* Wunused-macros:                        Warning Options.    (line 2325)
+* Wunused-parameter:                     Warning Options.    (line 1204)
+* Wunused-result:                        Warning Options.    (line 1211)
+* Wunused-value:                         Warning Options.    (line 1248)
+* Wunused-variable:                      Warning Options.    (line 1216)
 * Wuseless-cast:                         C++ Dialect Options.
                                                              (line 1275)
-* Wvarargs:                              Warning Options.    (line 3099)
-* Wvariadic-macros:                      Warning Options.    (line 3093)
-* Wvector-operation-performance:         Warning Options.    (line 3104)
+* Wvarargs:                              Warning Options.    (line 3102)
+* Wvariadic-macros:                      Warning Options.    (line 3096)
+* Wvector-operation-performance:         Warning Options.    (line 3107)
 * Wvexing-parse:                         C++ Dialect Options.
                                                              (line 1098)
 * Wvirtual-inheritance:                  C++ Dialect Options.
                                                              (line 1071)
 * Wvirtual-move-assign:                  C++ Dialect Options.
                                                              (line 1078)
-* Wvla:                                  Warning Options.    (line 3114)
-* Wvla-larger-than=:                     Warning Options.    (line 3118)
+* Wvla:                                  Warning Options.    (line 3117)
+* Wvla-larger-than=:                     Warning Options.    (line 3121)
 * Wvolatile:                             C++ Dialect Options.
                                                              (line 1129)
-* Wvolatile-register-var:                Warning Options.    (line 3176)
-* Wwrite-strings:                        Warning Options.    (line 2471)
+* Wvolatile-register-var:                Warning Options.    (line 3179)
+* Wwrite-strings:                        Warning Options.    (line 2474)
 * Wzero-as-null-pointer-constant:        C++ Dialect Options.
                                                              (line 1142)
-* Wzero-length-bounds:                   Warning Options.    (line 1940)
-* Wzero-length-bounds <1>:               Warning Options.    (line 1940)
+* Wzero-length-bounds:                   Warning Options.    (line 1943)
+* Wzero-length-bounds <1>:               Warning Options.    (line 1943)
 * x:                                     Overall Options.    (line  135)
 * Xassembler:                            Assembler Options.  (line   13)
 * Xbind-lazy:                            VxWorks Options.    (line   26)
@@ -67225,7 +67228,7 @@ Keyword Index
                                                              (line  273)
 * character set, input:                  Preprocessor Options.
                                                              (line  286)
-* character set, input normalization:    Warning Options.    (line 2850)
+* character set, input normalization:    Warning Options.    (line 2853)
 * character set, wide execution:         Preprocessor Options.
                                                              (line  278)
 * cimag:                                 Other Builtins.     (line    6)
@@ -67253,7 +67256,7 @@ Keyword Index
 * common variable attribute:             Common Variable Attributes.
                                                              (line  176)
 * comparison of signed and unsigned values, warning: Warning Options.
-                                                             (line 2577)
+                                                             (line 2580)
 * compilation statistics:                Developer Options.  (line    6)
 * compiler bugs, reporting:              Bug Reporting.      (line    6)
 * compiler compared to C++ preprocessor: G++ and GCC.        (line   34)
@@ -67985,7 +67988,7 @@ Keyword Index
 * longjmp:                               Global Register Variables.
                                                              (line   92)
 * longjmp incompatibilities:             Incompatibilities.  (line   39)
-* longjmp warnings:                      Warning Options.    (line 1345)
+* longjmp warnings:                      Warning Options.    (line 1348)
 * long_call function attribute, ARC:     ARC Function Attributes.
                                                              (line   27)
 * long_call function attribute, ARM:     ARM Function Attributes.
@@ -68143,8 +68146,8 @@ Keyword Index
 * nexttoward:                            Other Builtins.     (line    6)
 * nexttowardf:                           Other Builtins.     (line    6)
 * nexttowardl:                           Other Builtins.     (line    6)
-* NFC:                                   Warning Options.    (line 2850)
-* NFKC:                                  Warning Options.    (line 2850)
+* NFC:                                   Warning Options.    (line 2853)
+* NFKC:                                  Warning Options.    (line 2853)
 * Nios II options:                       Nios II Options.    (line    6)
 * nmi function attribute, NDS32:         NDS32 Function Attributes.
                                                              (line   50)
@@ -68245,7 +68248,7 @@ Keyword Index
 * open coding:                           Inline.             (line    6)
 * OpenACC accelerator programming:       C Dialect Options.  (line  388)
 * OpenACC accelerator programming <1>:   C Dialect Options.  (line  397)
-* OpenACC accelerator programming <2>:   Warning Options.    (line 2917)
+* OpenACC accelerator programming <2>:   Warning Options.    (line 2920)
 * OpenACC offloading options:            C Dialect Options.  (line  373)
 * OpenACC offloading targets:            C Dialect Options.  (line  360)
 * OpenMP offloading options:             C Dialect Options.  (line  373)
@@ -68379,7 +68382,7 @@ Keyword Index
 * pragmas:                               Pragmas.            (line    6)
 * pragmas in C++, effect on inlining:    C++ Interface.      (line   57)
 * pragmas, interface and implementation: C++ Interface.      (line    6)
-* pragmas, warning of unknown:           Warning Options.    (line 1360)
+* pragmas, warning of unknown:           Warning Options.    (line 1363)
 * precompiled headers:                   Precompiled Headers.
                                                              (line    6)
 * prefer-vector-width function attribute, x86: x86 Function Attributes.
@@ -68571,7 +68574,7 @@ Keyword Index
 * signbitf:                              Other Builtins.     (line    6)
 * signbitl:                              Other Builtins.     (line    6)
 * signed and unsigned values, comparison warning: Warning Options.
-                                                             (line 2577)
+                                                             (line 2580)
 * significand:                           Other Builtins.     (line    6)
 * significandf:                          Other Builtins.     (line    6)
 * significandl:                          Other Builtins.     (line    6)
@@ -68673,7 +68676,7 @@ Keyword Index
 * syntax checking:                       Warning Options.    (line   13)
 * syscall_linkage function attribute, IA-64: IA-64 Function Attributes.
                                                              (line    9)
-* system headers, warnings from:         Warning Options.    (line 1968)
+* system headers, warnings from:         Warning Options.    (line 1971)
 * sysv_abi function attribute, x86:      x86 Function Attributes.
                                                              (line   34)
 * tan:                                   Other Builtins.     (line    6)
@@ -69050,7 +69053,7 @@ Keyword Index
 * union:                                 Unnamed Fields.     (line    6)
 * union, casting to a:                   Cast to Union.      (line    6)
 * unions:                                Incompatibilities.  (line  146)
-* unknown pragmas, warning:              Warning Options.    (line 1360)
+* unknown pragmas, warning:              Warning Options.    (line 1363)
 * unresolved references and -nodefaultlibs: Link Options.    (line  154)
 * unresolved references and -nostdlib:   Link Options.       (line  154)
 * unused function attribute:             Common Function Attributes.
@@ -69206,18 +69209,18 @@ Keyword Index
 * warm function attribute, NDS32:        NDS32 Function Attributes.
                                                              (line   52)
 * warning for comparison of signed and unsigned values: Warning Options.
-                                                             (line 2577)
+                                                             (line 2580)
 * warning for overloaded virtual function: C++ Dialect Options.
                                                              (line  972)
 * warning for reordering of member initializers: C++ Dialect Options.
                                                              (line  786)
-* warning for unknown pragmas:           Warning Options.    (line 1360)
+* warning for unknown pragmas:           Warning Options.    (line 1363)
 * warning function attribute:            Common Function Attributes.
                                                              (line  364)
 * warning GCC_COLORS capability:         Diagnostic Message Formatting Options.
                                                              (line   95)
 * warning messages:                      Warning Options.    (line    6)
-* warnings from system headers:          Warning Options.    (line 1968)
+* warnings from system headers:          Warning Options.    (line 1971)
 * warnings vs errors:                    Warnings and Errors.
                                                              (line    6)
 * warn_if_not_aligned type attribute:    Common Type Attributes.
@@ -69277,429 +69280,429 @@ Node: C++ Dialect Options132536
 Node: Objective-C and Objective-C++ Dialect Options190554
 Node: Diagnostic Message Formatting Options202301
 Node: Warning Options231067
-Ref: Wtrigraphs333059
-Node: Static Analyzer Options374144
-Node: Debugging Options391391
-Node: Optimize Options412628
-Ref: Type-punning484462
-Node: Instrumentation Options603400
-Node: Preprocessor Options648153
-Ref: dashMF653000
-Ref: fdollars-in-identifiers657662
-Node: Assembler Options670867
-Node: Link Options671558
-Ref: Link Options-Footnote-1688434
-Node: Directory Options688770
-Node: Code Gen Options697173
-Node: Developer Options726045
-Node: Submodel Options767430
-Node: AArch64 Options769240
-Ref: aarch64-feature-modifiers784551
-Node: Adapteva Epiphany Options789787
-Node: AMD GCN Options795739
-Node: ARC Options797302
-Node: ARM Options818071
-Node: AVR Options859256
-Node: Blackfin Options885793
-Node: C6X Options893685
-Node: CRIS Options895228
-Node: CR16 Options898967
-Node: C-SKY Options899879
-Node: Darwin Options905606
-Node: DEC Alpha Options913047
-Node: eBPF Options924663
-Node: FR30 Options927039
-Node: FT32 Options927599
-Node: FRV Options928545
-Node: GNU/Linux Options935309
-Node: H8/300 Options936690
-Node: HPPA Options938142
-Node: IA-64 Options947674
-Node: LM32 Options955802
-Node: M32C Options956325
-Node: M32R/D Options957598
-Node: M680x0 Options961143
-Node: MCore Options975298
-Node: MeP Options976800
-Node: MicroBlaze Options980760
-Node: MIPS Options983825
-Node: MMIX Options1020364
-Node: MN10300 Options1022841
-Node: Moxie Options1025384
-Node: MSP430 Options1025871
-Node: NDS32 Options1033632
-Node: Nios II Options1035802
-Node: Nvidia PTX Options1049018
-Node: OpenRISC Options1051710
-Node: PDP-11 Options1054464
-Node: picoChip Options1055713
-Node: PowerPC Options1057851
-Node: PRU Options1058071
-Node: RISC-V Options1060280
-Node: RL78 Options1067932
-Node: RS/6000 and PowerPC Options1071707
-Node: RX Options1113240
-Node: S/390 and zSeries Options1121842
-Node: Score Options1132621
-Node: SH Options1133470
-Node: Solaris 2 Options1148610
-Node: SPARC Options1149848
-Node: System V Options1165500
-Node: TILE-Gx Options1166328
-Node: TILEPro Options1167346
-Node: V850 Options1167850
-Node: VAX Options1174537
-Node: Visium Options1175075
-Node: VMS Options1177383
-Node: VxWorks Options1178199
-Node: x86 Options1179351
-Node: x86 Windows Options1244979
-Node: Xstormy16 Options1247785
-Node: Xtensa Options1248079
-Node: zSeries Options1254215
-Node: Spec Files1254411
-Node: Environment Variables1280499
-Node: Precompiled Headers1289932
-Node: C++ Modules1296141
-Ref: C++ Modules-Footnote-11302280
-Node: C++ Module Mapper1302533
-Node: C++ Module Preprocessing1307686
-Node: C++ Compiled Module Interface1309515
-Ref: C++ Compiled Module Interface-Footnote-11312899
-Ref: C++ Compiled Module Interface-Footnote-21312988
-Node: C Implementation1313044
-Node: Translation implementation1314734
-Node: Environment implementation1315325
-Node: Identifiers implementation1315879
-Node: Characters implementation1316965
-Node: Integers implementation1320615
-Node: Floating point implementation1322664
-Node: Arrays and pointers implementation1325727
-Ref: Arrays and pointers implementation-Footnote-11327187
-Node: Hints implementation1327313
-Node: Structures unions enumerations and bit-fields implementation1328808
-Node: Qualifiers implementation1331032
-Node: Declarators implementation1333093
-Node: Statements implementation1333434
-Node: Preprocessing directives implementation1333760
-Node: Library functions implementation1336081
-Node: Architecture implementation1336730
-Node: Locale-specific behavior implementation1338375
-Node: C++ Implementation1338680
-Node: Conditionally-supported behavior1339963
-Node: Exception handling1340580
-Node: C Extensions1341047
-Node: Statement Exprs1346270
-Node: Local Labels1351642
-Node: Labels as Values1354615
-Ref: Labels as Values-Footnote-11357142
-Node: Nested Functions1357327
-Node: Nonlocal Gotos1361281
-Node: Constructing Calls1363547
-Node: Typeof1368262
-Node: Conditionals1372191
-Node: __int1281373080
-Node: Long Long1373605
-Node: Complex1375096
-Node: Floating Types1377864
-Node: Half-Precision1381385
-Node: Decimal Float1384886
-Node: Hex Floats1386740
-Node: Fixed-Point1387814
-Node: Named Address Spaces1391072
-Ref: AVR Named Address Spaces1391753
-Node: Zero Length1398365
-Node: Empty Structures1402546
-Node: Variable Length1402952
-Node: Variadic Macros1405670
-Node: Escaped Newlines1408048
-Node: Subscripting1408909
-Node: Pointer Arith1409634
-Node: Variadic Pointer Args1410211
-Node: Pointers to Arrays1410936
-Node: Initializers1411689
-Node: Compound Literals1412190
-Node: Designated Inits1415757
-Node: Case Ranges1419681
-Node: Cast to Union1420362
-Node: Mixed Labels and Declarations1422096
-Node: Function Attributes1422733
-Node: Common Function Attributes1427200
-Ref: Common Function Attributes-Footnote-11502437
-Node: AArch64 Function Attributes1502754
-Node: AMD GCN Function Attributes1508948
-Node: ARC Function Attributes1512001
-Node: ARM Function Attributes1514938
-Node: AVR Function Attributes1520077
-Node: Blackfin Function Attributes1524612
-Node: BPF Function Attributes1527109
-Node: CR16 Function Attributes1527697
-Node: C-SKY Function Attributes1528216
-Node: Epiphany Function Attributes1529515
-Node: H8/300 Function Attributes1532270
-Node: IA-64 Function Attributes1533468
-Node: M32C Function Attributes1534510
-Node: M32R/D Function Attributes1536848
-Node: m68k Function Attributes1538322
-Node: MCORE Function Attributes1539266
-Node: MeP Function Attributes1540077
-Node: MicroBlaze Function Attributes1541378
-Node: Microsoft Windows Function Attributes1542885
-Node: MIPS Function Attributes1547454
-Node: MSP430 Function Attributes1553072
-Node: NDS32 Function Attributes1557151
-Node: Nios II Function Attributes1559575
-Node: Nvidia PTX Function Attributes1560872
-Node: PowerPC Function Attributes1561487
-Node: RISC-V Function Attributes1568261
-Node: RL78 Function Attributes1569677
-Node: RX Function Attributes1570916
-Node: S/390 Function Attributes1573463
-Node: SH Function Attributes1575291
-Node: Symbian OS Function Attributes1578719
-Node: V850 Function Attributes1579055
-Node: Visium Function Attributes1579600
-Node: x86 Function Attributes1580128
-Node: Xstormy16 Function Attributes1603930
-Node: Variable Attributes1604437
-Node: Common Variable Attributes1605970
-Node: ARC Variable Attributes1627880
-Node: AVR Variable Attributes1628262
-Node: Blackfin Variable Attributes1633424
-Node: H8/300 Variable Attributes1634282
-Node: IA-64 Variable Attributes1635355
-Node: M32R/D Variable Attributes1636106
-Node: MeP Variable Attributes1636889
-Node: Microsoft Windows Variable Attributes1638982
-Node: MSP430 Variable Attributes1641435
-Node: Nvidia PTX Variable Attributes1642649
-Node: PowerPC Variable Attributes1643266
-Node: RL78 Variable Attributes1643823
-Node: V850 Variable Attributes1644242
-Node: x86 Variable Attributes1644875
-Node: Xstormy16 Variable Attributes1645931
-Node: Type Attributes1646501
-Node: Common Type Attributes1648189
-Node: ARC Type Attributes1670550
-Node: ARM Type Attributes1671022
-Node: BPF Type Attributes1671804
-Node: MeP Type Attributes1672321
-Node: PowerPC Type Attributes1672723
-Node: x86 Type Attributes1673712
-Node: Label Attributes1674704
-Node: Enumerator Attributes1676731
-Node: Statement Attributes1678263
-Node: Attribute Syntax1679746
-Node: Function Prototypes1691004
-Node: C++ Comments1692784
-Node: Dollar Signs1693303
-Node: Character Escapes1693768
-Node: Alignment1694052
-Node: Inline1695705
-Node: Volatiles1700522
-Node: Using Assembly Language with C1703421
-Node: Basic Asm1704658
-Node: Extended Asm1710108
-Ref: Volatile1714222
-Ref: AssemblerTemplate1718335
-Ref: OutputOperands1722575
-Ref: FlagOutputOperands1729538
-Ref: InputOperands1732485
-Ref: Clobbers and Scratch Registers1736753
-Ref: GotoLabels1745394
-Ref: x86Operandmodifiers1749017
-Ref: x86floatingpointasmoperands1753833
-Ref: msp430Operandmodifiers1757162
-Node: Constraints1758820
-Node: Simple Constraints1759926
-Node: Multi-Alternative1767240
-Node: Modifiers1768915
-Node: Machine Constraints1771714
-Node: Asm Labels1828262
-Node: Explicit Register Variables1829882
-Ref: Explicit Reg Vars1830096
-Node: Global Register Variables1830705
-Ref: Global Reg Vars1830913
-Node: Local Register Variables1835695
-Ref: Local Reg Vars1835915
-Node: Size of an asm1839543
-Node: Alternate Keywords1841021
-Node: Incomplete Enums1842526
-Node: Function Names1843283
-Node: Return Address1845187
-Node: Vector Extensions1849774
-Node: Offsetof1860757
-Node: __sync Builtins1861590
-Node: __atomic Builtins1868033
-Node: Integer Overflow Builtins1881658
-Node: x86 specific memory model extensions for transactional memory1888141
-Node: Object Size Checking1889407
-Node: Other Builtins1895663
-Node: Target Builtins1947311
-Node: AArch64 Built-in Functions1949086
-Node: Alpha Built-in Functions1949774
-Node: Altera Nios II Built-in Functions1952822
-Node: ARC Built-in Functions1957191
-Node: ARC SIMD Built-in Functions1962403
-Node: ARM iWMMXt Built-in Functions1971299
-Node: ARM C Language Extensions (ACLE)1978295
-Node: ARM Floating Point Status and Control Intrinsics1979572
-Node: ARM ARMv8-M Security Extensions1980057
-Node: AVR Built-in Functions1981337
-Node: Blackfin Built-in Functions1985098
-Node: BPF Built-in Functions1985716
-Node: FR-V Built-in Functions1987175
-Node: Argument Types1988038
-Node: Directly-mapped Integer Functions1989869
-Node: Directly-mapped Media Functions1991029
-Node: Raw read/write Functions1999311
-Node: Other Built-in Functions2000219
-Node: MIPS DSP Built-in Functions2001405
-Node: MIPS Paired-Single Support2014052
-Node: MIPS Loongson Built-in Functions2015551
-Node: Paired-Single Arithmetic2022073
-Node: Paired-Single Built-in Functions2023096
-Node: MIPS-3D Built-in Functions2025763
-Node: MIPS SIMD Architecture (MSA) Support2031157
-Node: MIPS SIMD Architecture Built-in Functions2033997
-Node: Other MIPS Built-in Functions2060851
-Node: MSP430 Built-in Functions2061860
-Node: NDS32 Built-in Functions2063261
-Node: picoChip Built-in Functions2064554
-Node: Basic PowerPC Built-in Functions2065903
-Node: Basic PowerPC Built-in Functions Available on all Configurations2066761
-Node: Basic PowerPC Built-in Functions Available on ISA 2.052075270
-Node: Basic PowerPC Built-in Functions Available on ISA 2.062080105
-Node: Basic PowerPC Built-in Functions Available on ISA 2.072082185
-Node: Basic PowerPC Built-in Functions Available on ISA 3.02083039
-Node: Basic PowerPC Built-in Functions Available on ISA 3.12090017
-Node: PowerPC AltiVec/VSX Built-in Functions2093230
-Node: PowerPC AltiVec Built-in Functions on ISA 2.052101299
-Node: PowerPC AltiVec Built-in Functions Available on ISA 2.062126699
-Node: PowerPC AltiVec Built-in Functions Available on ISA 2.072133765
-Node: PowerPC AltiVec Built-in Functions Available on ISA 3.02143575
-Node: PowerPC AltiVec Built-in Functions Available on ISA 3.12159292
-Node: PowerPC Hardware Transactional Memory Built-in Functions2192515
-Node: PowerPC Atomic Memory Operation Functions2201030
-Node: PowerPC Matrix-Multiply Assist Built-in Functions2203593
-Node: PRU Built-in Functions2209718
-Node: RISC-V Built-in Functions2210906
-Node: RX Built-in Functions2211317
-Node: S/390 System z Built-in Functions2215319
-Node: SH Built-in Functions2220549
-Node: SPARC VIS Built-in Functions2222277
-Node: TI C6X Built-in Functions2230808
-Node: TILE-Gx Built-in Functions2231839
-Node: TILEPro Built-in Functions2232958
-Node: x86 Built-in Functions2234058
-Node: x86 transactional memory intrinsics2298432
-Node: x86 control-flow protection intrinsics2301699
-Node: Target Format Checks2303470
-Node: Solaris Format Checks2303902
-Node: Darwin Format Checks2304328
-Node: Pragmas2305291
-Node: AArch64 Pragmas2306232
-Node: ARM Pragmas2306689
-Node: M32C Pragmas2307316
-Node: MeP Pragmas2308388
-Node: PRU Pragmas2310440
-Node: RS/6000 and PowerPC Pragmas2311018
-Node: S/390 Pragmas2311758
-Node: Darwin Pragmas2312324
-Node: Solaris Pragmas2313377
-Node: Symbol-Renaming Pragmas2314541
-Node: Structure-Layout Pragmas2316178
-Node: Weak Pragmas2318458
-Node: Diagnostic Pragmas2319193
-Node: Visibility Pragmas2323384
-Node: Push/Pop Macro Pragmas2324069
-Node: Function Specific Option Pragmas2325042
-Node: Loop-Specific Pragmas2327008
-Node: Unnamed Fields2328608
-Node: Thread-Local2330805
-Node: C99 Thread-Local Edits2332911
-Node: C++98 Thread-Local Edits2334909
-Node: Binary constants2338354
-Node: C++ Extensions2339025
-Node: C++ Volatiles2340655
-Node: Restricted Pointers2343003
-Node: Vague Linkage2344594
-Node: C++ Interface2348217
-Ref: C++ Interface-Footnote-12352014
-Node: Template Instantiation2352152
-Node: Bound member functions2358243
-Node: C++ Attributes2359775
-Node: Function Multiversioning2363847
-Node: Type Traits2365654
-Node: C++ Concepts2372604
-Node: Deprecated Features2374110
-Node: Backwards Compatibility2375935
-Node: Objective-C2377007
-Node: GNU Objective-C runtime API2377614
-Node: Modern GNU Objective-C runtime API2378621
-Node: Traditional GNU Objective-C runtime API2381057
-Node: Executing code before main2381784
-Node: What you can and what you cannot do in +load2384528
-Node: Type encoding2386898
-Node: Legacy type encoding2392264
-Node: @encode2393354
-Node: Method signatures2393899
-Node: Garbage Collection2395891
-Node: Constant string objects2398581
-Node: compatibility_alias2401090
-Node: Exceptions2401815
-Node: Synchronization2404525
-Node: Fast enumeration2405709
-Node: Using fast enumeration2406021
-Node: c99-like fast enumeration syntax2407232
-Node: Fast enumeration details2407935
-Node: Fast enumeration protocol2410275
-Node: Messaging with the GNU Objective-C runtime2413427
-Node: Dynamically registering methods2414799
-Node: Forwarding hook2416490
-Node: Compatibility2419530
-Node: Gcov2426086
-Node: Gcov Intro2426621
-Node: Invoking Gcov2429339
-Node: Gcov and Optimization2452072
-Node: Gcov Data Files2455825
-Node: Cross-profiling2457234
-Node: Gcov-tool2459088
-Node: Gcov-tool Intro2459513
-Node: Invoking Gcov-tool2461483
-Node: Gcov-dump2464061
-Node: Gcov-dump Intro2464384
-Node: Invoking Gcov-dump2464651
-Node: lto-dump2465308
-Node: lto-dump Intro2465607
-Node: Invoking lto-dump2465857
-Node: Trouble2466953
-Node: Actual Bugs2468370
-Node: Interoperation2468817
-Node: Incompatibilities2475708
-Node: Fixed Headers2483860
-Node: Standard Libraries2485518
-Node: Disappointments2486890
-Node: C++ Misunderstandings2491249
-Node: Static Definitions2492060
-Node: Name lookup2493113
-Ref: Name lookup-Footnote-12497894
-Node: Temporaries2498083
-Node: Copy Assignment2500059
-Node: Non-bugs2501894
-Node: Warnings and Errors2512400
-Node: Bugs2514162
-Node: Bug Criteria2514629
-Node: Bug Reporting2516839
-Node: Service2517057
-Node: Contributing2517877
-Node: Funding2518618
-Node: GNU Project2521108
-Node: Copying2521754
-Node: GNU Free Documentation License2559262
-Node: Contributors2584380
-Node: Option Index2625353
-Node: Keyword Index2918331
+Ref: Wtrigraphs333243
+Node: Static Analyzer Options374328
+Node: Debugging Options391575
+Node: Optimize Options412812
+Ref: Type-punning484646
+Node: Instrumentation Options603584
+Node: Preprocessor Options648337
+Ref: dashMF653184
+Ref: fdollars-in-identifiers657846
+Node: Assembler Options671051
+Node: Link Options671742
+Ref: Link Options-Footnote-1688618
+Node: Directory Options688954
+Node: Code Gen Options697357
+Node: Developer Options726229
+Node: Submodel Options767614
+Node: AArch64 Options769424
+Ref: aarch64-feature-modifiers784735
+Node: Adapteva Epiphany Options789971
+Node: AMD GCN Options795923
+Node: ARC Options797486
+Node: ARM Options818255
+Node: AVR Options859440
+Node: Blackfin Options885977
+Node: C6X Options893869
+Node: CRIS Options895412
+Node: CR16 Options899151
+Node: C-SKY Options900063
+Node: Darwin Options905790
+Node: DEC Alpha Options913231
+Node: eBPF Options924847
+Node: FR30 Options927223
+Node: FT32 Options927783
+Node: FRV Options928729
+Node: GNU/Linux Options935493
+Node: H8/300 Options936874
+Node: HPPA Options938326
+Node: IA-64 Options947858
+Node: LM32 Options955986
+Node: M32C Options956509
+Node: M32R/D Options957782
+Node: M680x0 Options961327
+Node: MCore Options975482
+Node: MeP Options976984
+Node: MicroBlaze Options980944
+Node: MIPS Options984009
+Node: MMIX Options1020548
+Node: MN10300 Options1023025
+Node: Moxie Options1025568
+Node: MSP430 Options1026055
+Node: NDS32 Options1033816
+Node: Nios II Options1035986
+Node: Nvidia PTX Options1049202
+Node: OpenRISC Options1051894
+Node: PDP-11 Options1054648
+Node: picoChip Options1055897
+Node: PowerPC Options1058035
+Node: PRU Options1058255
+Node: RISC-V Options1060464
+Node: RL78 Options1068116
+Node: RS/6000 and PowerPC Options1071891
+Node: RX Options1113424
+Node: S/390 and zSeries Options1122026
+Node: Score Options1132805
+Node: SH Options1133654
+Node: Solaris 2 Options1148794
+Node: SPARC Options1150032
+Node: System V Options1165684
+Node: TILE-Gx Options1166512
+Node: TILEPro Options1167530
+Node: V850 Options1168034
+Node: VAX Options1174721
+Node: Visium Options1175259
+Node: VMS Options1177567
+Node: VxWorks Options1178383
+Node: x86 Options1179535
+Node: x86 Windows Options1245163
+Node: Xstormy16 Options1247969
+Node: Xtensa Options1248263
+Node: zSeries Options1254399
+Node: Spec Files1254595
+Node: Environment Variables1280683
+Node: Precompiled Headers1290116
+Node: C++ Modules1296325
+Ref: C++ Modules-Footnote-11302464
+Node: C++ Module Mapper1302717
+Node: C++ Module Preprocessing1307870
+Node: C++ Compiled Module Interface1309699
+Ref: C++ Compiled Module Interface-Footnote-11313083
+Ref: C++ Compiled Module Interface-Footnote-21313172
+Node: C Implementation1313228
+Node: Translation implementation1314918
+Node: Environment implementation1315509
+Node: Identifiers implementation1316063
+Node: Characters implementation1317149
+Node: Integers implementation1320799
+Node: Floating point implementation1322848
+Node: Arrays and pointers implementation1325911
+Ref: Arrays and pointers implementation-Footnote-11327371
+Node: Hints implementation1327497
+Node: Structures unions enumerations and bit-fields implementation1328992
+Node: Qualifiers implementation1331216
+Node: Declarators implementation1333277
+Node: Statements implementation1333618
+Node: Preprocessing directives implementation1333944
+Node: Library functions implementation1336265
+Node: Architecture implementation1336914
+Node: Locale-specific behavior implementation1338559
+Node: C++ Implementation1338864
+Node: Conditionally-supported behavior1340147
+Node: Exception handling1340764
+Node: C Extensions1341231
+Node: Statement Exprs1346454
+Node: Local Labels1351826
+Node: Labels as Values1354799
+Ref: Labels as Values-Footnote-11357326
+Node: Nested Functions1357511
+Node: Nonlocal Gotos1361465
+Node: Constructing Calls1363731
+Node: Typeof1368446
+Node: Conditionals1372375
+Node: __int1281373264
+Node: Long Long1373789
+Node: Complex1375280
+Node: Floating Types1378048
+Node: Half-Precision1381569
+Node: Decimal Float1385070
+Node: Hex Floats1386924
+Node: Fixed-Point1387998
+Node: Named Address Spaces1391256
+Ref: AVR Named Address Spaces1391937
+Node: Zero Length1398549
+Node: Empty Structures1402730
+Node: Variable Length1403136
+Node: Variadic Macros1405854
+Node: Escaped Newlines1408232
+Node: Subscripting1409093
+Node: Pointer Arith1409818
+Node: Variadic Pointer Args1410395
+Node: Pointers to Arrays1411120
+Node: Initializers1411873
+Node: Compound Literals1412374
+Node: Designated Inits1415941
+Node: Case Ranges1419865
+Node: Cast to Union1420546
+Node: Mixed Labels and Declarations1422280
+Node: Function Attributes1422917
+Node: Common Function Attributes1427384
+Ref: Common Function Attributes-Footnote-11502621
+Node: AArch64 Function Attributes1502938
+Node: AMD GCN Function Attributes1509132
+Node: ARC Function Attributes1512185
+Node: ARM Function Attributes1515122
+Node: AVR Function Attributes1520261
+Node: Blackfin Function Attributes1524796
+Node: BPF Function Attributes1527293
+Node: CR16 Function Attributes1527881
+Node: C-SKY Function Attributes1528400
+Node: Epiphany Function Attributes1529699
+Node: H8/300 Function Attributes1532454
+Node: IA-64 Function Attributes1533652
+Node: M32C Function Attributes1534694
+Node: M32R/D Function Attributes1537032
+Node: m68k Function Attributes1538506
+Node: MCORE Function Attributes1539450
+Node: MeP Function Attributes1540261
+Node: MicroBlaze Function Attributes1541562
+Node: Microsoft Windows Function Attributes1543069
+Node: MIPS Function Attributes1547638
+Node: MSP430 Function Attributes1553256
+Node: NDS32 Function Attributes1557335
+Node: Nios II Function Attributes1559759
+Node: Nvidia PTX Function Attributes1561056
+Node: PowerPC Function Attributes1561671
+Node: RISC-V Function Attributes1568445
+Node: RL78 Function Attributes1569861
+Node: RX Function Attributes1571100
+Node: S/390 Function Attributes1573647
+Node: SH Function Attributes1575475
+Node: Symbian OS Function Attributes1578903
+Node: V850 Function Attributes1579239
+Node: Visium Function Attributes1579784
+Node: x86 Function Attributes1580312
+Node: Xstormy16 Function Attributes1604114
+Node: Variable Attributes1604621
+Node: Common Variable Attributes1606154
+Node: ARC Variable Attributes1628064
+Node: AVR Variable Attributes1628446
+Node: Blackfin Variable Attributes1633608
+Node: H8/300 Variable Attributes1634466
+Node: IA-64 Variable Attributes1635539
+Node: M32R/D Variable Attributes1636290
+Node: MeP Variable Attributes1637073
+Node: Microsoft Windows Variable Attributes1639166
+Node: MSP430 Variable Attributes1641619
+Node: Nvidia PTX Variable Attributes1642833
+Node: PowerPC Variable Attributes1643450
+Node: RL78 Variable Attributes1644007
+Node: V850 Variable Attributes1644426
+Node: x86 Variable Attributes1645059
+Node: Xstormy16 Variable Attributes1646115
+Node: Type Attributes1646685
+Node: Common Type Attributes1648373
+Node: ARC Type Attributes1670734
+Node: ARM Type Attributes1671206
+Node: BPF Type Attributes1671988
+Node: MeP Type Attributes1672505
+Node: PowerPC Type Attributes1672907
+Node: x86 Type Attributes1673896
+Node: Label Attributes1674888
+Node: Enumerator Attributes1676915
+Node: Statement Attributes1678447
+Node: Attribute Syntax1679930
+Node: Function Prototypes1691188
+Node: C++ Comments1692968
+Node: Dollar Signs1693487
+Node: Character Escapes1693952
+Node: Alignment1694236
+Node: Inline1695889
+Node: Volatiles1700706
+Node: Using Assembly Language with C1703605
+Node: Basic Asm1704842
+Node: Extended Asm1710292
+Ref: Volatile1714406
+Ref: AssemblerTemplate1718519
+Ref: OutputOperands1722759
+Ref: FlagOutputOperands1729722
+Ref: InputOperands1732669
+Ref: Clobbers and Scratch Registers1736937
+Ref: GotoLabels1745578
+Ref: x86Operandmodifiers1749201
+Ref: x86floatingpointasmoperands1754017
+Ref: msp430Operandmodifiers1757346
+Node: Constraints1759004
+Node: Simple Constraints1760110
+Node: Multi-Alternative1767424
+Node: Modifiers1769099
+Node: Machine Constraints1771898
+Node: Asm Labels1828446
+Node: Explicit Register Variables1830066
+Ref: Explicit Reg Vars1830280
+Node: Global Register Variables1830889
+Ref: Global Reg Vars1831097
+Node: Local Register Variables1835879
+Ref: Local Reg Vars1836099
+Node: Size of an asm1839727
+Node: Alternate Keywords1841205
+Node: Incomplete Enums1842710
+Node: Function Names1843467
+Node: Return Address1845371
+Node: Vector Extensions1849958
+Node: Offsetof1860941
+Node: __sync Builtins1861774
+Node: __atomic Builtins1868217
+Node: Integer Overflow Builtins1881842
+Node: x86 specific memory model extensions for transactional memory1888325
+Node: Object Size Checking1889591
+Node: Other Builtins1895847
+Node: Target Builtins1947495
+Node: AArch64 Built-in Functions1949270
+Node: Alpha Built-in Functions1949958
+Node: Altera Nios II Built-in Functions1953006
+Node: ARC Built-in Functions1957375
+Node: ARC SIMD Built-in Functions1962587
+Node: ARM iWMMXt Built-in Functions1971483
+Node: ARM C Language Extensions (ACLE)1978479
+Node: ARM Floating Point Status and Control Intrinsics1979756
+Node: ARM ARMv8-M Security Extensions1980241
+Node: AVR Built-in Functions1981521
+Node: Blackfin Built-in Functions1985282
+Node: BPF Built-in Functions1985900
+Node: FR-V Built-in Functions1987359
+Node: Argument Types1988222
+Node: Directly-mapped Integer Functions1990053
+Node: Directly-mapped Media Functions1991213
+Node: Raw read/write Functions1999495
+Node: Other Built-in Functions2000403
+Node: MIPS DSP Built-in Functions2001589
+Node: MIPS Paired-Single Support2014236
+Node: MIPS Loongson Built-in Functions2015735
+Node: Paired-Single Arithmetic2022257
+Node: Paired-Single Built-in Functions2023280
+Node: MIPS-3D Built-in Functions2025947
+Node: MIPS SIMD Architecture (MSA) Support2031341
+Node: MIPS SIMD Architecture Built-in Functions2034181
+Node: Other MIPS Built-in Functions2061035
+Node: MSP430 Built-in Functions2062044
+Node: NDS32 Built-in Functions2063445
+Node: picoChip Built-in Functions2064738
+Node: Basic PowerPC Built-in Functions2066087
+Node: Basic PowerPC Built-in Functions Available on all Configurations2066945
+Node: Basic PowerPC Built-in Functions Available on ISA 2.052075454
+Node: Basic PowerPC Built-in Functions Available on ISA 2.062080289
+Node: Basic PowerPC Built-in Functions Available on ISA 2.072082369
+Node: Basic PowerPC Built-in Functions Available on ISA 3.02083223
+Node: Basic PowerPC Built-in Functions Available on ISA 3.12090201
+Node: PowerPC AltiVec/VSX Built-in Functions2093414
+Node: PowerPC AltiVec Built-in Functions on ISA 2.052101483
+Node: PowerPC AltiVec Built-in Functions Available on ISA 2.062126883
+Node: PowerPC AltiVec Built-in Functions Available on ISA 2.072133949
+Node: PowerPC AltiVec Built-in Functions Available on ISA 3.02143759
+Node: PowerPC AltiVec Built-in Functions Available on ISA 3.12159476
+Node: PowerPC Hardware Transactional Memory Built-in Functions2192699
+Node: PowerPC Atomic Memory Operation Functions2201214
+Node: PowerPC Matrix-Multiply Assist Built-in Functions2203777
+Node: PRU Built-in Functions2209902
+Node: RISC-V Built-in Functions2211090
+Node: RX Built-in Functions2211501
+Node: S/390 System z Built-in Functions2215503
+Node: SH Built-in Functions2220733
+Node: SPARC VIS Built-in Functions2222461
+Node: TI C6X Built-in Functions2230992
+Node: TILE-Gx Built-in Functions2232023
+Node: TILEPro Built-in Functions2233142
+Node: x86 Built-in Functions2234242
+Node: x86 transactional memory intrinsics2298616
+Node: x86 control-flow protection intrinsics2301883
+Node: Target Format Checks2303654
+Node: Solaris Format Checks2304086
+Node: Darwin Format Checks2304512
+Node: Pragmas2305475
+Node: AArch64 Pragmas2306416
+Node: ARM Pragmas2306873
+Node: M32C Pragmas2307500
+Node: MeP Pragmas2308572
+Node: PRU Pragmas2310624
+Node: RS/6000 and PowerPC Pragmas2311202
+Node: S/390 Pragmas2311942
+Node: Darwin Pragmas2312508
+Node: Solaris Pragmas2313561
+Node: Symbol-Renaming Pragmas2314725
+Node: Structure-Layout Pragmas2316362
+Node: Weak Pragmas2318642
+Node: Diagnostic Pragmas2319377
+Node: Visibility Pragmas2323568
+Node: Push/Pop Macro Pragmas2324253
+Node: Function Specific Option Pragmas2325226
+Node: Loop-Specific Pragmas2327192
+Node: Unnamed Fields2328792
+Node: Thread-Local2330989
+Node: C99 Thread-Local Edits2333095
+Node: C++98 Thread-Local Edits2335093
+Node: Binary constants2338538
+Node: C++ Extensions2339209
+Node: C++ Volatiles2340839
+Node: Restricted Pointers2343187
+Node: Vague Linkage2344778
+Node: C++ Interface2348401
+Ref: C++ Interface-Footnote-12352198
+Node: Template Instantiation2352336
+Node: Bound member functions2358427
+Node: C++ Attributes2359959
+Node: Function Multiversioning2364031
+Node: Type Traits2365838
+Node: C++ Concepts2372788
+Node: Deprecated Features2374294
+Node: Backwards Compatibility2376119
+Node: Objective-C2377191
+Node: GNU Objective-C runtime API2377798
+Node: Modern GNU Objective-C runtime API2378805
+Node: Traditional GNU Objective-C runtime API2381241
+Node: Executing code before main2381968
+Node: What you can and what you cannot do in +load2384712
+Node: Type encoding2387082
+Node: Legacy type encoding2392448
+Node: @encode2393538
+Node: Method signatures2394083
+Node: Garbage Collection2396075
+Node: Constant string objects2398765
+Node: compatibility_alias2401274
+Node: Exceptions2401999
+Node: Synchronization2404709
+Node: Fast enumeration2405893
+Node: Using fast enumeration2406205
+Node: c99-like fast enumeration syntax2407416
+Node: Fast enumeration details2408119
+Node: Fast enumeration protocol2410459
+Node: Messaging with the GNU Objective-C runtime2413611
+Node: Dynamically registering methods2414983
+Node: Forwarding hook2416674
+Node: Compatibility2419714
+Node: Gcov2426270
+Node: Gcov Intro2426805
+Node: Invoking Gcov2429523
+Node: Gcov and Optimization2452256
+Node: Gcov Data Files2456009
+Node: Cross-profiling2457418
+Node: Gcov-tool2459272
+Node: Gcov-tool Intro2459697
+Node: Invoking Gcov-tool2461667
+Node: Gcov-dump2464245
+Node: Gcov-dump Intro2464568
+Node: Invoking Gcov-dump2464835
+Node: lto-dump2465492
+Node: lto-dump Intro2465791
+Node: Invoking lto-dump2466041
+Node: Trouble2467137
+Node: Actual Bugs2468554
+Node: Interoperation2469001
+Node: Incompatibilities2475892
+Node: Fixed Headers2484044
+Node: Standard Libraries2485702
+Node: Disappointments2487074
+Node: C++ Misunderstandings2491433
+Node: Static Definitions2492244
+Node: Name lookup2493297
+Ref: Name lookup-Footnote-12498078
+Node: Temporaries2498267
+Node: Copy Assignment2500243
+Node: Non-bugs2502078
+Node: Warnings and Errors2512584
+Node: Bugs2514346
+Node: Bug Criteria2514813
+Node: Bug Reporting2517023
+Node: Service2517241
+Node: Contributing2518061
+Node: Funding2518802
+Node: GNU Project2521292
+Node: Copying2521938
+Node: GNU Free Documentation License2559446
+Node: Contributors2584564
+Node: Option Index2625537
+Node: Keyword Index2918515
 
 End Tag Table
 
