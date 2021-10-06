@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20211005 (experimental)")
+(!version  "12.0.0 20211006 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 230 0
@@ -26237,19 +26237,19 @@
    (!type already_seen 1840)
   )
   gc_pointed_to "gnat_binding_level"
-  (!srcfileloc  "ada/gcc-interface/utils.c" 260)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 263)
   (!fields 3 
    (!pair  "chain"
     (!type already_seen 1841)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 254)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 257)
     nil )
    (!pair  "block"
     (!type already_seen 23)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 256)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 259)
     nil )
    (!pair  "jmpbuf_decl"
     (!type already_seen 23)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 259)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 262)
     nil )
   )
   (!options 
@@ -26258,15 +26258,15 @@
   1 nil nil )
  
  (!type struct 1842 nil  gc_pointed_to "packable_type_hash"
-  (!srcfileloc  "ada/gcc-interface/utils.c" 287)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 290)
   (!fields 2 
    (!pair  "hash"
     (!type already_seen 2)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 285)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 288)
     nil )
    (!pair  "type"
     (!type already_seen 23)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 286)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 289)
     nil )
   )
   (!options 
@@ -26275,7 +26275,7 @@
   1 nil nil )
  
  (!type struct 1843 nil  gc_used "packable_type_hasher"
-  (!srcfileloc  "ada/gcc-interface/utils.c" 301)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 304)
   (!fields 0 )
   nil 1 nil nil )
  
@@ -26284,25 +26284,25 @@
    (!type already_seen 1844)
   )
   gc_pointed_to "hash_table<packable_type_hasher>"
-  (!srcfileloc  "ada/gcc-interface/utils.c" 301)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 304)
   (!fields 1 
    (!pair  "packable_type_hasher"
     (!type already_seen 1843)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 301)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 304)
     nil )
   )
  )
  
  (!type struct 1846 nil  gc_pointed_to "pad_type_hash"
-  (!srcfileloc  "ada/gcc-interface/utils.c" 310)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 313)
   (!fields 2 
    (!pair  "hash"
     (!type already_seen 2)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 308)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 311)
     nil )
    (!pair  "type"
     (!type already_seen 23)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 309)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 312)
     nil )
   )
   (!options 
@@ -26311,7 +26311,7 @@
   1 nil nil )
  
  (!type struct 1847 nil  gc_used "pad_type_hasher"
-  (!srcfileloc  "ada/gcc-interface/utils.c" 324)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 327)
   (!fields 0 )
   nil 1 nil nil )
  
@@ -26320,11 +26320,11 @@
    (!type already_seen 1848)
   )
   gc_pointed_to "hash_table<pad_type_hasher>"
-  (!srcfileloc  "ada/gcc-interface/utils.c" 324)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 327)
   (!fields 1 
    (!pair  "pad_type_hasher"
     (!type already_seen 1847)
-    (!srcfileloc  "ada/gcc-interface/utils.c" 324)
+    (!srcfileloc  "ada/gcc-interface/utils.c" 327)
     nil )
   )
  )
@@ -27459,7 +27459,7 @@
    (!type already_seen 1958)
   )
   gc_pointed_to "tinst_level"
-  (!srcfileloc  "cp/pt.c" 9483)
+  (!srcfileloc  "cp/pt.c" 9490)
   (!fields 8 
    (!pair  "next"
     (!type already_seen 1959)
@@ -29340,7 +29340,7 @@
    (!type already_seen 2164)
   )
   gc_pointed_to "pending_template"
-  (!srcfileloc  "cp/pt.c" 9492)
+  (!srcfileloc  "cp/pt.c" 9499)
   (!fields 2 
    (!pair  "next"
     (!type already_seen 2165)
@@ -29412,15 +29412,15 @@
    (!type already_seen 2177)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.c" 29409)
+  (!srcfileloc  "cp/pt.c" 29416)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 529)
-    (!srcfileloc  "cp/pt.c" 29409)
+    (!srcfileloc  "cp/pt.c" 29416)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.c" 29409)
+    (!srcfileloc  "cp/pt.c" 29416)
     nil )
   )
  )
@@ -30553,15 +30553,15 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2177)
-  (!srcfileloc  "cp/pt.c" 29409)
+  (!srcfileloc  "cp/pt.c" 29416)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2164)
-  (!srcfileloc  "cp/pt.c" 9492)
+  (!srcfileloc  "cp/pt.c" 9499)
   nil )
  (!pair  "tinst_level"
   (!type already_seen 1958)
-  (!srcfileloc  "cp/pt.c" 9483)
+  (!srcfileloc  "cp/pt.c" 9490)
   nil )
  (!pair  "spec_hash_table"
   (!type already_seen 2167)
@@ -31213,23 +31213,23 @@
   nil )
  (!pair  "builtin_type"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6146)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6149)
   nil )
  (!pair  "pad_type_hasher"
   (!type already_seen 1847)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 324)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 327)
   nil )
  (!pair  "hash_table<pad_type_hasher>"
   (!type already_seen 1848)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 324)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 327)
   nil )
  (!pair  "packable_type_hasher"
   (!type already_seen 1843)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 301)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 304)
   nil )
  (!pair  "hash_table<packable_type_hasher>"
   (!type already_seen 1844)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 301)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 304)
   nil )
  (!pair  "atomic_acces_t"
   (!type already_seen 2)
@@ -35076,60 +35076,60 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2178)
-  (!srcfileloc  "cp/pt.c" 29409)
+  (!srcfileloc  "cp/pt.c" 29416)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "explicit_specifier_map"
   (!type already_seen 922)
-  (!srcfileloc  "cp/pt.c" 13767)
+  (!srcfileloc  "cp/pt.c" 13774)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "defarg_inst"
   (!type already_seen 922)
-  (!srcfileloc  "cp/pt.c" 13651)
+  (!srcfileloc  "cp/pt.c" 13658)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "last_error_tinst_level"
   (!type already_seen 1959)
-  (!srcfileloc  "cp/pt.c" 10947)
+  (!srcfileloc  "cp/pt.c" 10954)
   nil )
  (!pair  "pending_template_freelist_head"
   (!type already_seen 2165)
-  (!srcfileloc  "cp/pt.c" 9492)
+  (!srcfileloc  "cp/pt.c" 9499)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tinst_level_freelist_head"
   (!type already_seen 1959)
-  (!srcfileloc  "cp/pt.c" 9483)
+  (!srcfileloc  "cp/pt.c" 9490)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tree_list_freelist_head"
   (!type already_seen 23)
-  (!srcfileloc  "cp/pt.c" 9474)
+  (!srcfileloc  "cp/pt.c" 9481)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "defaulted_ttp_cache"
   (!type already_seen 390)
-  (!srcfileloc  "cp/pt.c" 7784)
+  (!srcfileloc  "cp/pt.c" 7791)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "tparm_obj_values"
   (!type already_seen 390)
-  (!srcfileloc  "cp/pt.c" 7133)
+  (!srcfileloc  "cp/pt.c" 7140)
   nil )
  (!pair  "canonical_template_parms"
   (!type already_seen 84)
@@ -35829,67 +35829,67 @@
   (!type array 2328 nil  gc_used "(int) ATTR_LAST" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6316)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6319)
   nil )
  (!pair  "builtin_types"
   (!type array 2329 nil  gc_used "(int) BT_LAST + 1" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6149)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6152)
   nil )
  (!pair  "dummy_global"
   (!type already_seen 23)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 5902)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 5905)
   nil )
  (!pair  "pad_type_hash_table"
   (!type already_seen 1849)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 324)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 327)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "packable_type_hash_table"
   (!type already_seen 1845)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 301)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 304)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "free_block_chain"
   (!type already_seen 23)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 278)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 281)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "builtin_decls"
   (!type already_seen 84)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 275)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 278)
   nil )
  (!pair  "global_decls"
   (!type already_seen 84)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 272)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 275)
   nil )
  (!pair  "global_context"
   (!type already_seen 23)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 269)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 272)
   nil )
  (!pair  "free_binding_level"
   (!type already_seen 1841)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 266)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 269)
   (!options 
    (!option deletable string  "")
   )
  )
  (!pair  "current_binding_level"
   (!type already_seen 1841)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 263)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 266)
   nil )
  (!pair  "float_types"
   (!type array 2330 nil  gc_used "NUM_MACHINE_MODES" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 247)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 250)
   nil )
  (!pair  "signed_and_unsigned_types"
   (!type array 2331 nil  gc_used "2 * MAX_BITS_PER_WORD + 1" 
@@ -35897,25 +35897,25 @@
     (!type already_seen 23)
    )
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 244)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 247)
   nil )
  (!pair  "dummy_node_table"
   (!type already_seen 24)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 227)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 230)
   (!options 
    (!option length string  "max_gnat_nodes")
   )
  )
  (!pair  "associate_gnat_to_gnu"
   (!type already_seen 24)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 215)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 218)
   (!options 
    (!option length string  "max_gnat_nodes")
   )
  )
  (!pair  "thunk_labelno"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/trans.c" 10709)
+  (!srcfileloc  "ada/gcc-interface/trans.c" 10715)
   nil )
  (!pair  "gnu_loop_stack"
   (!type already_seen 1838)
