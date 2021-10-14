@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "12.0.0 20211013 (experimental)")
+(!version  "12.0.0 20211014 (experimental)")
 (!srcdir  "../../gcc/gcc")
 (!languages 10 ada c cp d fortran go jit lto objc objcp)
 (!fileslist 230 0
@@ -13924,7 +13924,7 @@
                        (!type struct 616 
                         (!type already_seen 615)
                         gc_pointed_to "cl_target_option"
-                        (!srcfileloc  "config/arm/arm.c" 28137)
+                        (!srcfileloc  "config/arm/arm.c" 28132)
                         (!fields 10 
                          (!pair  "x_arm_arch_string"
                           (!type already_seen 11)
@@ -31721,7 +31721,7 @@
   nil )
  (!pair  "cl_target_option"
   (!type already_seen 616)
-  (!srcfileloc  "config/arm/arm.c" 28137)
+  (!srcfileloc  "config/arm/arm.c" 28132)
   nil )
  (!pair  "arm_pragma_enum"
   (!type already_seen 2)
@@ -36181,15 +36181,15 @@
   nil )
  (!pair  "arm_previous_fndecl"
   (!type already_seen 23)
-  (!srcfileloc  "config/arm/arm.c" 32925)
+  (!srcfileloc  "config/arm/arm.c" 32920)
   nil )
  (!pair  "last_asm_targ_options"
   (!type already_seen 615)
-  (!srcfileloc  "config/arm/arm.c" 28137)
+  (!srcfileloc  "config/arm/arm.c" 28132)
   nil )
  (!pair  "tls_get_addr_libfunc"
   (!type already_seen 99)
-  (!srcfileloc  "config/arm/arm.c" 9032)
+  (!srcfileloc  "config/arm/arm.c" 9031)
   nil )
  (!pair  "pic_labelno"
   (!type already_seen 2)
