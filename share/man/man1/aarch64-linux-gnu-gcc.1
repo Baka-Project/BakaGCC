@@ -133,7 +133,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2021-10-13" "gcc-12.0.0" "GNU"
+.TH GCC 1 "2021-10-14" "gcc-12.0.0" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -13900,6 +13900,10 @@ concurrent instances of your program, and provided that the file system
 supports locking, the data files will be correctly updated.  Unless
 a strict \s-1ISO C\s0 dialect option is in effect, \f(CW\*(C`fork\*(C'\fR calls are
 detected and correctly handled without double counting.
+.Sp
+Moreover, an object file can be recompiled multiple times
+and the corresponding \fI.gcda\fR file merges as long as
+the source file and the compiler options are unchanged.
 .IP "*" 4
 For profile-directed optimizations, compile the source files again with
 the same optimization and code generation options plus
